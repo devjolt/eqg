@@ -1,0 +1,159 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="/..">Home</a></li>
+      <li class="breadcrumb-item"><a href="/gcsemaths">GCSE Maths</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Geometry and measure</li>
+    </ol>
+</nav>
+
+
+<div class="jumbotron">
+    <h1 class="display-4">Basic geometry rules and parallel lines</h1>
+    <hr class="my-4">
+
+    <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <a class="nav-item nav-link active" id="algebra_basics" data-toggle="tab" href="#nav-algebra-basics" role="tab" aria-controls="nav-home" aria-selected="true">Angles in shapes</a>
+            <a class="nav-item nav-link" id="expanding-brackets" data-toggle="tab" href="#nav-expanding-brackets" role="tab" aria-controls="nav-expanding-brackets" aria-selected="false">Using parallel lines</a>
+            <a class="nav-item nav-link" id="expanding-brackets" data-toggle="tab" href="#nav-problems" role="tab" aria-controls="nav-problems" aria-selected="false">Geometry problems</a>
+
+        </div>
+    </nav>
+    <div class="tab-content" id="nav-tab">
+        <div class="tab-pane fade show active" id="nav-algebra-basics" role="tabpanel" aria-labelledby="nav-algebra-basics">
+
+            {% for item in angles_basics %}
+                <a class="dropdown-item" href='{{item.link}}/' target="_blank">{{item.name}}</a>
+            {% endfor %}
+        
+        </div>
+        <div class="tab-pane fade" id="nav-expanding-brackets" role="tabpanel" aria-labelledby="nav-expanding-brackets">
+            {% for item in angles_around_lines %}
+                <a class="dropdown-item" href='{{item.link}}/' target="_blank">{{item.name}}</a>
+            {% endfor %}
+        </div>
+
+        <div class="tab-pane fade" id="nav-problems" role="tabpanel" aria-labelledby="nav-problems">
+            {% for item in angle_problems %}
+                <a class="dropdown-item" href='{{item.link}}/' target="_blank">{{item.name}}</a>
+            {% endfor %}
+        </div>
+
+    </div>
+</div>
+
+
+<div class="jumbotron">
+    <h1 class="display-4">Rules for regular polygons, triangles, quadrilaterals and circles</h1>
+    <hr class="my-4">
+
+    <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <a class="nav-item nav-link active" id="polygons" data-toggle="tab" href="#nav-polygons" role="tab" aria-controls="nav-polygons" aria-selected="true">Polygons</a>
+            <a class="nav-item nav-link" id="circles" data-toggle="tab" href="#nav-circles" role="tab" aria-controls="nav-circles" aria-selected="false">Circles</a>
+            <a class="nav-item nav-link" id="circle-problems" data-toggle="tab" href="#nav-circle-problems" role="tab" aria-controls="nav-circle-problems" aria-selected="false">Circle problems</a>
+
+        </div>
+    </nav>
+    <div class="tab-content" id="nav-tab">
+        <div class="tab-pane fade show active" id="nav-polygons" role="tabpanel" aria-labelledby="nav-polygons">
+            {% for item in polygons %}
+                <a class="dropdown-item" href='{{item.link}}/' target="_blank">{{item.name}}</a>
+            {% endfor %}
+        </div>
+        <div class="tab-pane fade" id="nav-circles" aria-labelledby="nav-circles">
+            {% for item in circles %}
+                <a class="dropdown-item" href='{{item.link}}/' target="_blank">{{item.name}}</a>
+            {% endfor %}
+        </div>
+
+        <div class="tab-pane fade" id="nav-circle-problems" role="tabpanel" aria-labelledby="nav-circle-problems">
+            {% for item in circle_problems %}
+                <a class="dropdown-item" href='{{item.link}}/' target="_blank">{{item.name}}</a>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+
+
+<div class="jumbotron">
+    <h1 class="display-4">Congruence, similarity and transformations</h1>
+    <hr class="my-4">
+
+    <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <a class="nav-item nav-link active" id="algebra_regular" data-toggle="tab" href="#nav-con" role="tab" aria-controls="nav-regular" aria-selected="true">Congruence</a>
+            <a class="nav-item nav-link" id="expanding-brackets" data-toggle="tab" href="#nav-sim" role="tab" aria-controls="nav-triangles" aria-selected="false">Similarity</a>
+            <a class="nav-item nav-link" id="expanding-brackets" data-toggle="tab" href="#nav-simconproblems" role="tab" aria-controls="nav-triangles" aria-selected="false">Similarity and congruence problems</a>
+            
+        </div>
+    </nav>
+    <div class="tab-content" id="nav-tab">
+        <div class="tab-pane fade show active" id="nav-con" role="tabpanel" aria-labelledby="nav-regular">
+            {% for item in congruency %}
+                <a class="dropdown-item" href='{{item.link}}/' target="_blank">{{item.name}}</a>
+            {% endfor %}
+
+        </div>
+        <div class="tab-pane fade" id="nav-sim" aria-labelledby="nav-expanding-brackets">
+            {% for item in similarity %}
+                <a class="dropdown-item" href='{{item.link}}/' target="_blank">{{item.name}}</a>
+            {% endfor %}
+        </div>
+
+        
+        <div class="tab-pane fade" id="nav-simconproblems" aria-labelledby="nav-expanding-brackets">
+            {% for item in similarity_congruency_problems %}
+                <a class="dropdown-item" href='{{item.link}}/' target="_blank">{{item.name}}</a>
+            {% endfor %}
+        </div>
+
+    </div>
+</div>
+
+<div class="jumbotron">
+    <h1 class="display-4">Area, Surface area and volume</h1>
+    <hr class="my-4">
+
+    <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <a class="nav-item nav-link active" id="algebra_regular" data-toggle="tab" href="#nav-area-triangles-quadrilaterals" role="tab" aria-controls="nav-regular" aria-selected="true">Area of triangles and quadrilaterals</a>
+            <a class="nav-item nav-link" id="expanding-brackets" data-toggle="tab" href="#nav-area-circles" role="tab" aria-controls="nav-triangles" aria-selected="false">Area of circles</a>
+            <a class="nav-item nav-link" id="expanding-brackets" data-toggle="tab" href="#nav-surface-area" role="tab" aria-controls="nav-surface-area" aria-selected="false">Surface area</a>
+            <a class="nav-item nav-link" id="expanding-brackets" data-toggle="tab" href="#nav-volume" role="tab" aria-controls="nav-volume" aria-selected="false">Volume</a>
+
+            
+        </div>
+    </nav>
+    <div class="tab-content" id="nav-tab">
+        <div class="tab-pane fade show active" id="nav-area-triangles-quadrilaterals" role="tabpanel" aria-labelledby="nav-regular">
+            {% for item in area_triangles_quadrilaterals %}
+                <a class="dropdown-item" href='{{item.link}}/' target="_blank">{{item.name}}</a>
+            {% endfor %}
+
+        </div>
+        <div class="tab-pane fade" id="nav-area-circles" aria-labelledby="nav-expanding-brackets">
+            {% for item in area_circles %}
+                <a class="dropdown-item" href='{{item.link}}/' target="_blank">{{item.name}}</a>
+            {% endfor %}
+        </div>
+
+        <div class="tab-pane fade" id="nav-surface-area" aria-labelledby="nav-surface-area">
+            {% for item in surface_area %}
+                <a class="dropdown-item" href='{{item.link}}/' target="_blank">{{item.name}}</a>
+            {% endfor %}</div>
+
+        <div class="tab-pane fade" id="nav-volume" aria-labelledby="nav-volume">
+            {% for item in volume %}
+                <a class="dropdown-item" href='{{item.link}}/' target="_blank">{{item.name}}</a>
+            {% endfor %}
+        </div>
+
+    </div>
+</div>
+{% endblock %}

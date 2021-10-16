@@ -1,0 +1,239 @@
+compared to a full keyboard, a laptop keyboard...
+correct = (
+    "may have keys which are closer together", 
+    "may have fewer keys", 
+    "may not have a numeric key pad", 
+    "may have smaller buttons for less commonly used keys", 
+    "may be missing some keys",
+    "may be missing page up or page down keys", 
+    "will have all alphabet keys in similar positions", 
+)
+incorrect = (
+    "may have keys which are further apart", 
+    "may have more keys", 
+    "may have a numeric key pad", 
+    "may have the same button sizes for all keys", 
+    "will have the same keys",
+    "may be missing a capslock key", 
+    "may be missing an escape key key", 
+    "may be missing an escape key key", 
+    "may be missing a space bar", 
+    "may not be back lit", 
+    "may require you to use the shift key to access some numbers",
+    "may require you to use the shift key to access some less common letters",
+)
+
+memory storage
+correct = (
+    "desktops tend to use 3.5 inch hard drives", 
+    "laptops tend to use 2.5 inch hard drives", 
+    "2.5 inch SSD drives tend to be compatible with laptops",
+    "SSD drives are silent"
+    "SSD drives are faster than hard drives", 
+    "SSD drives have less latency than hard drives",
+    "SSD drives have no large moving parts", 
+    "SSHD drives are a combination of hard drive and SSD",
+    "SSHD drives allow data to be writen to the HD to be cached by the SSD", 
+    "hard drives tend to provide more capacity for less cost than SSDs"
+    "SSD stands for solid state drive", 
+    "SSHD stands for solid state hybrid drive",
+)
+incorrect = (
+    "desktops tend to use 2.5 inch hard drives", 
+    "laptops tend to use 3.5 inch hard drives", 
+    "3.5 inch SSD drives tend to be compatible with laptops",
+    "hard drives are silent"
+    "hard drives are faster than SSD", 
+    "SSD drives have more latency than hard drives",
+    "Hard drives have no moving parts", 
+    "SSHD drives are a combination of two hard drives",
+    "SSHD drives are a combination of two SSDs",
+    "SSHD drives allow data to be writen to the SSD to be cached by the hard drive", 
+    "SSDs tend to provide more capacity for less cost than Hard drives"
+    "SSD stands for secure state drive", 
+    "SSHD stands for secure state hybrid drive",
+    "SSD stands for silent state drive", 
+    "SSHD stands for silent state hybrid drive",
+)
+
+laptop RAM = 
+    correct (
+        "SODIMM stands for small outline dual inline memory module", 
+        "Micro DIMM stands for Micro dual inline memory module", 
+        "laptop RAM is generally a different size to desktop RAM",
+        "there are often a limited number of slots for RAM in a laptop",
+    )
+    incorrect (
+        "SODIMM stands for silent outline dual inline memory module", 
+        "SODIMM stands for small outline dual inline micro module", 
+        "SODIMM stands for small outline dual inline micro memory", 
+        "Micro DIMM stands for Micro differentiated inline memory module",
+        "Micro DIMM stands for Micro direct inline memory module",
+        "laptop RAM is generally compatible with desktop RAM",
+        "laptop RAM and desktop RAM are interchangable",
+        "it is often possible to upgrade the number of slots available for laptop RAM",
+        "most laptop RAM can be inserted bi-directionally",
+        "laptop RAM sticks are proprietory to each brand of laptop", 
+    )
+
+general hardware
+correct = (
+    "Optical drives are becoming less common in laptops", 
+    "DVDs and CD are being replaced by other media", 
+)
+
+
+
+upgrade a laptop
+
+    items = (
+        ("8GB RAM and 500GB HDD. Spare slots exist for RAM and storage. They are concerned that their laptop takes a long time to boot up, but have a limited budget.", "Add an SSD, and make this the bootable drive."),
+        ("2GB RAM and 256GB SSD. Spare slots exist for RAM and storage. They are concerned that their laptop slows down when multitasking, but have a limited budget.", "Add a 4GB stick of RAM."),        
+        ("8GB RAM and 128GB SSD. Spare slots exist for RAM and storage. They need much more storage space on their laptop, but have a limited budget.", "Add a 1TB 2.5 inch hard drive""),
+        ("16GB RAM and 526GB SSD. Spare slots exist for RAM and storage. They have a GPU built into the motherboard. They want to upgrade their graphics processing ability and have a large budget","It is unlikely that they will be able to upgrade their GPU. They should consider buying a new laptop with a better GPU" )
+    )
+    fillers = (
+        "Upgrade the video card",
+        "Upgrade the motherboard",
+        "Upgrade the battery",
+        "Add a 1TB 3.5 inch hard drive",
+        "Replace the hard drive with a hard drive from another laptop",
+        "Replace the old RAM with newer RAM", 
+        "Recommend turning off the WIFI",
+        "Recommend buying a new laptop", 
+        "Replace the 2.5 inch drive with a larger 3.5 inch drive", 
+        "Replace the old battery", 
+        "Add a GPU in the RAM slot", 
+        "Add a GPU in the storage slot", 
+        "Upgrade the existing GPU", 
+        )
+
+you have a client who wants to purchase some new laptops. They are concerned
+
+items = (
+    ("purchase new laptops which will be secure without the need to continuously log in to their machines", "built in security card readers"),
+    ("provide existing laptops with security without the need to continuously log in to their machines", "external security card readers"),
+    ("purchase new laptops which will be easy to secure against theft from workstations", "ensure new laptops have slots for physical laptop locks"),
+    ("provide existing laptops with security against theft from workstations", "purchase physical laptop locks"),
+)
+fillers = (
+    "remove login functionality", 
+    "remove the need to enter a password", 
+    "install security cameras",
+    )
+
+correct = (
+    "laptops have seperate slots for different wifi cards", 
+    "laptops have a unique slot for 802.11 wireless cards", 
+    "laptops have a unique slot for WAN (cellular network) wireless cards", 
+    "laptops have a unique slot for PAN (Bluetooth) wireless cards",
+    "wireless cards in laptops can be replaced", 
+    "a wireless card is likely to have an antenna which needs to be attached", 
+    "the antenna for a wireless card is likely to end near the top of the laptop screen",
+    "mini PCI is larger than mini PCI express."
+    "mini PCI express cards are smaller than mini PCI cards."
+)
+incorrect = (
+    "all wireless functionality on a laptop is controlled by the same card", 
+    "wireless cards have built in antennas", 
+    "wireless cards are hard wired into the laptop's motherboard and cannot be replaced", 
+    "wireless cards are built into the shell of the laptop and cannot be replaced", 
+    "wireless cards a proprietory to each laptop",
+    "wireless functionality in a laptop is controlled by the graphics card", 
+    "mini PCI is smaller than mini PCI express",
+    "mini PCI express cards are larger than mini PCI cards",
+    "the antenna for a wireless card is likely to end near the base of the laptop screen",
+    "the antenna for a wireless card is likely to end near the hinge of the laptop screen",
+    "the antenna for a wireless card is likely to end near the power socket",
+)
+
+motherboard and video card
+correct = (
+    "in most laptops, the video card is built in or not upgradable", 
+    "in many laptops, there is a video card build into the motherboard", 
+    "in most laptops, the motherboard is proprietary", 
+    "in many laptops, most of the computational components are on the motherboard", 
+    "in some laptops, there may be a discrete graphics card", 
+    "in most laptops, there is an integrated memory crontroller", 
+    "in most laptops, the video controller is not upgradable", 
+    "in most laptops, processors are slower than desktops due to heat management issues",
+    "in most laptops, heat management is an issue because of confined space",  
+)
+incorrect = (
+    "in most laptops, the video card can be upgraded as easilly as RAM", 
+    "in most laptops, the video card can be upgraded as easilly as storage", 
+    "in many laptops, there is discrete graphics card", 
+    "in most laptops, all components are upgradable", 
+    "in many laptops, many of the components which could be upgraded on a desktop can also be upgraded", 
+    "in most laptops, heat management is easier because the components are smaller"
+    "in many laptops, most of the computational components are seperate form the motherboard", 
+    "in most laptops, processors are faster than desktops due to smaller size",
+    "in many laptops, larger fans mean easier heat management than desktops", 
+    "in most laptops, heat management is less of an issue because there is less air circulation",  
+)
+
+power:
+correct = (
+    "in laptops, AC to DC power conversion is done on an external power brick",
+    "in desktops, AC to DC power conversion is done on an internal power supply",
+    "laptop power supplies convert AC to 110 volts or 220 DC input",
+    "the DC jack on the laptop is specific to the laptop's power supply",
+    "different laptop power leads may not be interchangable",
+    "you can often get information about your power supply from the adapter",
+    "most laptops use a rechargable Li-Ion battery",
+    "Li-Ion batteries have no memory effect",
+    "Li-Ion batteries do not have to be fully charged and discharged",
+    "charging diminishes the capacity of Li-Ion batteries",
+    "battery form factor differs for each laptop",
+)
+incorrect = (
+    "in laptops, AC to DC power conversion is done on an internal power supply",
+    "in desktops, AC to DC power conversion is done on an external power brick",
+    "laptop power supplies convert DC to 110 volts or 220 AC input",
+    "the DC jack on each laptop is usally interchangable",
+    "different laptop power leads are usually interchangable",
+    "most laptops use a rechargable NiCad battery",
+    "Li-Ion batteries experience memory effect",
+    "Li-Ion batteries have to be fully charged and discharged",
+    "memory effect diminishes the capacity of Li-Ion batteries",
+    "batteries are interchangable between laptops",
+    "charging maintains the capacity of Li-Ion batteries",
+)
+
+power troubles:
+items = (
+    ("has lost their laptop power lead", "take details of the make and model of their laptop to order a new power lead"),
+    ("is complaining that their laptop, several years old but otherwise functional, has a short battery life", "take details of the make and model of their laptop to order a new battery"),
+    ("has damaged their power lead, and it no longer fits their laptop", "inspect the power lead to see if it can be repaired or needs to be replaced"),
+    ("is unable to charge their laptop. No charging light comes on when the lead is plugged in, and the jack seems loose", "remove the screws from the back of the laptop to check that the jack is correctly seated"),
+)
+fillers = (
+    "allow them to try your power lead", 
+    "allow them to try your battery",
+    "tell them to find another user with a laptop of the same brand and borrow their power lead",
+    "tell them to find another user with a laptop of the same brand and borrow their battery",
+    "backup their hard drive and order an SSD drive",
+    "order them a new device",
+)
+
+
+frames:
+    correct = (        
+        "plastic frames are lightweight",
+        "plastic frames are less durable than metal",
+        "plastic frames are inexpensive",
+        "metal frames are heavier",
+        "metal frames are more durable than plastic",
+        "metal frames are more expensive than plastic",
+        "metal frames can be more difficult to repair",
+    )
+    
+    incorrect = (        
+        "plastic frames are heavier",
+        "plastic frames are more durable than metal",
+        "plastic frames are expensive",
+        "metal frames are lighter",
+        "metal frames are less durable than plastic",
+        "metal frames are less expensive than plastic",
+        "metal frames can be easier to repair",
+    )

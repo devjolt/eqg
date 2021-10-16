@@ -1,0 +1,91 @@
+
+
+sychronisation 
+correct = (
+    "most synchronisation is invisible to the user",
+    "both client and server must aunthenicate each other for synchronisation to take place",
+    "synchronisation can be between devices",
+    "devices can synchronise to the cloud", 
+    "synchronisation can be between a device and your car",
+    "contacts, applications, email and pictures can be synchronised",
+)
+incrorrect = (
+    "most synchronisation requires user approval",
+    "only the server must be authenticated for synchronisation to take place", 
+    "only the client must be authenticated for synchronisation to take place", 
+    "a device can be synchronised to itself",
+    "synchronisation must be between mobile devices",
+    "your processor and RAM can be synchronised", 
+    "your IP address can be synchronised", 
+)
+
+A user is concerned that their calendar, pictures and contacts list could be lost if their device is misplaced or breaks. Which of the following could be a solution:
+correct = (
+    "synchronising their mobile device to their desktop", 
+    "synchronising their mobile device to the cloud", 
+    "synchronising their mobile device to a laptop", 
+incorrect = (
+    "making a list by hand of all of the information they wish to retain", 
+    "removing their SIM card from their device when not in use for safe keeping",
+    "continuously saving all of their data to an SD card in case of accidents", 
+    "Defragmentating their mobile device's storage", 
+)
+
+synchronisation to desktop
+correct = (
+    "Enough disk space must be available on the backup device", 
+    "Apple users may be able to synchronise using a lightning cable", 
+    "Apple users may be able to synchronise using a USB-C cable", 
+    "You can synchronise using your device's 802.11 wireless network", 
+    "Android users may be able to synchronise using a USB-C cable", 
+    "Android users may be able to synchronise using a Micro USB-B cable", 
+)
+
+synchronisation to your car
+correct = (
+    "apple users may synchronise their data with a compatible car using iOS car play", 
+    "android users may synchronise their data with a compatible car using Android Auto", 
+    "you can synchronise contact data and music with some cars", 
+    "when synchronised, your car and phone can share data in real time", 
+    "synchronisation with a rental car may present security issues", 
+    "synchronisation with a borrowed car may present security issues", 
+    "data from your phone may be displayed on a larger screen in your car", 
+    "you may be able to use car speakers to hear phone calls and music from your phone", 
+    "synchronisation with your car can take place via cable", 
+    "synchronisation with your can can take place via Bluetooth",
+)
+incorrect = (
+    "data synchronised with a car is automaically deleted when it detects a new user", 
+    "apple users may synchronise their data with a compatible car using itunes", 
+    "android users may synchronise their data with a compatible car using gmail drive", 
+    "you can directly interact with your car's on-board black box by synching with some cars", 
+    "your phone can only synchronise with your car via tethering", 
+    "synchronisation with a rental car is no less safe than using an ATM",  
+    "a mobile device synchronised with a car will be able to drive it",  
+    "synchronisation with your car can take place via NFC", 
+    "synchronisation with your can can take place via WAN",
+
+)
+
+apple users can use
+correct = (
+    "lighning connectors when synchronising data with a desktop",
+    "USB-C connectors when synchronising data with a desktop",
+    "iOS Car Play to synchronise data with a compatible car", 
+    "iTunes to back up their mobile device data to cloud", 
+    "recover their system data when backed up to the cloud", 
+    "iTunes to back up contact data",
+    "iTunes to back up music data",
+    "iTunes to back up calendar data",
+    "iOS to back up all data types to the cloud", 
+)
+incorrect = (
+    "USB-D connectors when synchronising data with a desktop",
+    "thunderbolt connectors when synchronising data with a desktop",
+    "iOS Auto Synch to synchronise data with a compatible car", 
+    "iTunes to back up only music data to cloud", 
+    "iTunes back up all data except contact data",
+    "iTunes to back up all data except music data",
+    "iTunes to back up all data except calendar data",
+    "iOS to back up only image data to the cloud", 
+)

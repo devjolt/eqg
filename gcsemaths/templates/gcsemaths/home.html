@@ -1,0 +1,163 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="/">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">GCSE Maths</li>
+    </ol>
+</nav>
+
+<div class="jumbotron text-left bg-light">
+  <div class="container">
+    <h1>Welcome to the GCSE Maths page!</h1>
+    <p>Which paper do you want to work on?</p>
+    <hr>
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">Paper 1 (non-calculator)</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Questions based on AQA GCSE Paper 1 (non-calculator)</h6>
+        <a href="exam_non_calc/p1f_18n_9_fraction_half_way3_/" class="card-link" target="_blank">Get started!</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="jumbotron text-left bg-light">
+    <div class="container">
+      <h1>Maths Revision Questions</h1>
+      <p>There's a map of the entire GCSE syllabus below! Go nuts.</p>
+      <hr>
+
+      
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Number</h5>
+              <div class="alert alert-warning" role="alert">
+                Under construction
+              </div>
+              <p>
+              <a href="a_number/" class="btn btn-primary">Let me choose</a>
+              <a href="a_number/random/" class="btn btn-primary" target ="_blank">Give me a random question</a>
+              
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Algebra</h5>
+              <div class="alert alert-warning" role="alert">
+                Under construction
+              </div>
+              <p>
+                <a href="b_algebra/" class="btn btn-primary">Let me choose</a>
+                <a href="b_algebra/random/" class="btn btn-primary" target ="_blank">Give me a random question</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Ratio, proportion and rates of change</h5>
+              <div class="alert alert-danger" role="alert">
+                Not built yet
+              </div>
+              <a href="#" class="btn btn-primary.disabled">Check back later</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Geometry and measures</h5>
+              <div class="alert alert-warning" role="alert">
+                Under construction
+              </div>
+              <a href="e_geometry/" class="btn btn-primary">Let me choose</a>
+              <a href="e_geometry/random/" class="btn btn-primary" target ="_blank">Give me a random question</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Statistics and proabability</h5>
+              <div class="alert alert-danger" role="alert">
+                Not built yet
+              </div>
+              <a href="#" class="btn btn-primary.disabled">Check back later</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <details>
+        <summary>Map of the entire GCSE</summary>
+        <div class="card">
+            <div class="card-body">
+                <ul>
+                    <li>Number</li>
+                      <ul>
+                          <li>Matter and radiation</li>
+                          <li>Quarks and leptons</li>
+                          <li>Quantum phenomena</li>
+                      </ul>
+                    <li>Algebra</li>
+                      <ul>
+                          <li>Waves</li>
+                          <li>Optics</li>
+                          <li>Quantum phenomena</li>
+                      </ul>
+                    <li>Ratio, proportion and rates of change</li>
+                      <ul>
+                          <li>Forces in equilibrium</li>
+                          <li>On the move</li>
+                          <li>Newton's laws of motion</li>
+                          <li>Force and momentum</li>
+                          <li>Work, energy and power</li>
+                          <li>Materials</li>
+                        </ul>
+                    <li>Geometry and measures</li>
+                      <ul>
+                          <li>Electric current</li>
+                          <li>DC circuits</li>
+                      </ul>
+                    <li>Statistics and probability</li>
+                        <ul>
+                            <li>Motion in a circle</li>
+                            <li>Simple harmonic motion</li>
+                            <li>Thermal physics</li>
+                            <li>Gases</li>
+                        </ul>
+                </ul>
+            </div>
+          </div>
+
+
+        </details>
+
+
+
+    </div>
+  </div>
+
+{% endblock %}

@@ -1,0 +1,322 @@
+functions, terms, acronyms table 
+items=(
+    ('IP addresses of devices on a network can be resolved to a single external IP address', 'network address translation', 'NAT'),
+    ('area on the router accessible from inside and outside the network','demilitarised zone','DMZ'),
+    ('a system of addressing devices on the internet','internet protocol version 4', 'IPv4'),
+    ('a way to allow all devices on a network to access the internet through a single IP address', 'port address translation', 'PAT'),
+    ('allows network devices to find other network devices','universal plug and play', 'UPnP'),
+    ('settings which allow prioritisation of specific types of traffic','Quality of Service','QoS'),
+    ('a type of encryption used to secure wireless networks','wifi protected access', 'WPA'),
+    ('security algorithm for wireless networks','wireless equivalent privacy','WEP')
+)
+
+
+def_soho_router
+correct = (
+"all in one device",
+"is a modem, amongst other things",
+"is a router, amongst other things",
+"is a switch, amongst other things",
+"is a firewall, amongst other things",
+"is a wireless access point, amongst other things",
+"probably has a WAN/DSL port",
+"probably has several LAN ports ",
+"does not require much configuration",
+"will probably route by default",
+"will probably switch by default",
+)
+incorrect = (
+"is fundementally a modem",
+"is fundementally a router",
+"is fundementally a switch",
+"is fundementally a firewall",
+"is fundementally a wireless access point",
+"probably has an rj-11 port",
+"probably has several VLAN ports ",
+"require setup configuration",
+"will probably act as a hub by default",
+"will probably act as an HTTP server by default",
+)
+def_access_point_settings
+correct = (
+"enable or disable 2.4Ghz frequency",
+"enable or disable 5Ghz frequency",
+"assign a custom SSID to available frequency",
+"choose WPA2 encryption",
+"choose WPA encryption",
+"choose enterprise level encryption",
+"choose WEP encryption",
+"select channel bandwidth",
+)
+incorrect = (
+"enable or disable 1Ghz frequency",
+"enable or disable 8Ghz frequency",
+"assign a custom ARP to available frequency",
+"assign a custom IP to available frequency",
+"assign a custom MAC to available frequency",
+"choose HTTP encryption",
+"choose HTTPS encryption",
+"choose WAP encryption",
+"select channel current",
+)
+def_SOHO_IP_addressing
+correct = (
+"IP address is automatically assigned via DHCP ",
+"ISP provides an IP address",
+"ISP may require authentication to be added",
+"internal IP address may be customised",
+"subnet mask of the router may be customised",
+"DNS server addresses may be customised",
+"SOHO routers automatically assign IP addresses to connected devices",
+"a DHCP range may be used to assign IP addresses",
+)
+incorrect = (
+"IP address is automatically assigned via HTTP",
+"IP address is automatically assigned via HTTPS,
+"IP address is automatically assigned via MACP",
+"ISP provides a MAC address",
+"ISP provides a VPN address",
+"ISP authenticates automatically",
+"internal IP address is fixed",
+"subnet mask of the router is fixed",
+"DNS server addresses is fixed",
+"HTTP server address is fixed",
+"SOHO routers automatically assign ports to connected devices",
+"a DHCP range may be used to assign MAC addresses",
+)
+def_NIC_configuration
+correct = (
+"devices connected to a SOHO router will likely self-configure",
+"wired devices can be configured for speed",
+"wired devices can be configured for half or full duplex",
+"wireless device SSID can be configured",
+"wireless devices may need to enter a password ",
+"wireless devices will need to identify the network",
+)
+incorrect = (
+"devices connected to a SOHO router will need configuration",
+"wired devices cannot be configured for speed",
+"wired devices cannot be configured for half or full duplex",
+"wireless device SSID cannot be configured",
+"wireless devices will not need to enter a password ",
+"wireless devices will automatically assign a password ",
+"wireless devices will join the network automatically",
+)
+def_enduser_device_configuration
+correct = (
+"devices may configure speed automatically",
+"DHCP addressing may be automatic",
+"device IP address can be pre-populated by DHCP",
+"device subnet mask can be pre-populated by DHCP",
+"device default gateway can be pre-populated by DHCP",
+"device DNS servers can be pre-populated by DHCP ",
+)
+incorrect = (
+"devices require manual speed configuration",
+"DHCP addresses must be manually added",
+"device HTTP address can be pre-populated by DHCP",
+"devices VPN can be pre-populated by DHCP",
+"devicede RDP can be pre-populated by DHCP",
+"device HTTPS servers can be pre-populated by DHCP ",
+)
+def_internet_of_things_configurations
+correct = (
+"many IoT devices are wireless",
+"IoT is useful for home automation",
+"security is an issue for IoT devices",
+"a thermostat may be an IoT device",
+"a light switch may be an IoT device",
+"a security camera may be an IoT device",
+"a door lock may be an IoT device",
+"digital assistants may be an IoT device",
+"smart speakers are an IoT device",
+"outbound communication in many IoT devices is automatic",
+"IoT devices generally require no special port mapping",
+"IoT devices generally require no special NAT configurations",
+)
+incorrect = (
+"many IoT devices are wired",
+"IoT reduced the need for home automation",
+"IoT devices increase security",
+"outbound communication in many IoT devices must be requested",
+"IoT devices generally require special port mapping",
+"IoT devices generally require special NAT configurations",
+)
+def_SOHO_firewalls
+correct = (
+"prevent direct access to the internal network",
+"can not usually be disabled",
+"configuring DMZ ports to allow unrestricted access is inadvisable",
+"creating port forwarding rules is advisable",
+)
+incorrect = (
+"prevent direct access to email network",
+"prevent direct access to NFC",
+"prevent direct access to internet protocols",
+"can be disabled each time it is used",
+"configuring DMZ ports to allow unrestricted access is advisable",
+"creating port forwarding rules is inadvisable",
+)
+def_network_address_translation
+correct = (
+"20 billion devices are connected to the internet",
+"IPv4 supports approximately 4.29 billion addresses",
+"there are no available IPv4 addresses to assign",
+"source NAT happens inside SOHO routers",
+"PAT happens inside SOHO routers",
+"source NAT and PAT are the same things",
+"all devices on a SOHO network are translated to a single external address",
+"internal devices are connected to the internet via the same SOHO router",
+"SOHO routers deal with source NAT",
+"SOHO routers deal with PAT",
+"to the internet, every device on your SOHO network has a single IP address",
+)
+incorrect = (
+"20 million devices are connected to the internet",
+"10 billion devices are connected to the internet",
+"IPv6 supports approximately 4.29 billion addresses",
+"there are many available IPv4 addresses to assign",
+"there are no available IPv6 addresses to assign",
+"source MAC addressing happens inside SOHO routers",
+"VPNs happens inside SOHO routers",
+"source MAC and PAT are the same things",
+"source NAT and VPNs are the same things",
+"all devices on a SOHO network are translated to a single internal address",
+"each devices on a SOHO network are translated to its own external address",
+"SOHO routers deal with HTTP",
+"SOHO routers deal with VPNs",
+"to the internet, every device on your SOHO network has its own IP address",
+"to the internet, every device on your SOHO network has its own VPN",
+)
+def_port_forwarding
+correct = (
+"port forwarding is configuring an internal device to be available externally",
+"port forwarding can grant 24/7 access to an internally hosted service",
+"port forwarding can grant external access to an internal web server",
+"port forwarding can grant external access to an internal game server",
+"port forwarding can grant external access to an internal security system",
+"external port number does not have to match internal port number",
+"external IP/port numbers map onto an internal IP/port",
+"port forwarding is also called destination NAT",
+"port forwarding is also called static NAT",
+"a destination address is translated from a public to a private IP",
+"port forwarding does not expire or timeout",
+"rules are contained in a conversion table",
+)
+incorrect = (
+"port forwarding is configuring an external device to be available internally",
+"port forwarding can grant 24/7 access to an externally hosted service",
+"port forwarding can grant external access to an external email server",
+"port forwarding can grant external access to an external game server",
+"port forwarding can grant external access to an external security system",
+"external port number must match internal port number",
+"external port number always matches internal port number",
+"external MAC addresses map onto an internal IP/port",
+"port forwarding is also called destination MAC",
+"port forwarding is also called static MAC",
+"port forwarding is also called destination IP",
+"port forwarding is also called static IP",
+"a destination address is translated from a private to a public IP",
+"a destination address is translated from a public to a private MAC address",
+"port forwarding expires after the session",
+"port forwarding expires after the last packet is verified",
+"rules are contained in a hash table",
+"rules are contained in a feeder table",
+)
+def_universal_plug_and_play
+correct = (
+"does not require configuration",
+"allow network devices to configure and find other network devices",
+"internal applications can open inbound ports without approval",
+"used for many peer to peer applications",
+"disabling UPnP is advisable",
+"UPnP is a security issue",
+"UPnP has automatic port forwarding",
+"port forwarding may be more secure than UPnP",
+)
+incorrect = (
+"requires configuration",
+"allow network devices to configure and find other devices with bluetooth",
+"internal applications can open inbound ports with approval",
+"disabling UPnP is a security risk",
+"UPnP is a security feature",
+"UPnP has automatic MAC assignment",
+"UPnP has automatic IP assignment",
+"port forwarding is less secure than UPnP",
+)
+def_whitelist_and_blacklisting
+correct = (
+"content can be filtered by IP address",
+"content can be filtered by port number",
+"content can be filtered by application",
+"whitelisting lets nothing pass the firewall unless approved",
+"whitelisting is regarded as very restrictive",
+"blacklisting allows all traffic through unless blocked",
+"specific URLS can be blocked",
+"specific domains can be blocked",
+"specific IP addresses can be blocked",
+)
+incorrect = (
+"content can be filtered by date",
+"content can be filtered by MAC address",
+"content can be filtered by language",
+"blacklisting lets nothing pass the firewall unless approved",
+"blacklisting is regarded as very restrictive",
+"whitelisting allows all traffic through unless blocked",
+"specific MAC addresses can be blocked",
+)
+def_media_access_control_filtering
+correct = (
+"every device on the network has a MAC address",
+"firewalls can prevent access through the physical hardware address",
+"MAC addresses can be spoofed",
+"MAC addresses are viewable through packet capture",
+"MAC filtering is security through obscrurity",
+"MAC addresses are viewable though WLAN analysis",
+)
+incorrect = (
+"every device on the network has an external MAC address",
+"firewalls can prevent access through the geographic address",
+"MAC addresses are secure",
+"MAC addresses are obscured from packet capture",
+"MAC filtering is absolute security",
+"MAC addresses are viewable though routers",
+)
+def_wireless_channels_and_encryption
+correct = (
+"it is advisable to configure for the highest encrytion possible",
+"WPA2 offers the best possible encryption",
+"WPA2 offers superior encryption to WPA",
+"WPA offers superior security to WEP",
+"WEP has several known vulnerabilities",
+"some access points automatically find open frequencies",
+"SOHO routers allow manual frequency configuration",
+)
+incorrect = (
+"it is advisable to configure for the cheapest encrytion possible",
+"WEP offers superior encryption to WPA",
+"WPA offers superior security to WAP",
+"WAP2 offer superior security to WAN", 
+"WAP2 offer superior security to WAP", 
+"WPA2 is more vulnerable than WEP",
+"some access points automatically find open ports",
+"some access points automatically find open NICs",
+"SOHO routers allow manual HTTP configuration",
+)
+def_managing_quality_of_service
+correct = (
+"different applications can often be prioritised",
+"prioritation can be by port number",
+"prioritisation can be by application",
+"prioritisation can be by MAC address",
+"manualy configuration of QoS may result in a decrease in performance",
+)
+incorrect = (
+"always prioritise automatically",
+"prioritation can be by HTTP vs HTTPs",
+"prioritisation can be by rating",
+"prioritisation can be by time",
+"manualy configuration of QoS will always increase performance",
+)
+
+problem, solution

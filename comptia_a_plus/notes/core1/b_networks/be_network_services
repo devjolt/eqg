@@ -1,0 +1,164 @@
+table
+
+
+def web servers
+start
+responds to browser requests
+uses HTML
+uses HTML5
+web pages are stored on a web server
+web pages are downloaded to the browser
+web pages can be built dynamically in real time
+web pages can be static
+stop
+
+def file servers
+start
+centralised storage
+can store spreadsheets
+can store word documents
+can store videos
+can store images
+file servers use a standard system of file management
+Windows file servers use SMB
+SMB stands for server message block
+Apple file servers use AFP
+AFP stands for Apple filing protocol
+from end hides the protocol
+copy, delete and renaming is possible
+stop
+
+def print servers
+start
+connects a printer to the network
+provides print services for all netowrk devices
+a computer can have its own print server
+may be built into a printer
+uses SMB
+SMB stands for server message block
+uses IPP 
+IPP stands for internet printing protocol
+uses LPD 
+LPD stands for line printer daemon
+stop
+
+def dynamic host configuration protocol server
+start
+uses DHCP
+DHCP stands for dynamic host configuration protocol
+on most home routers
+enterprise DHCP usually runs on central servers
+enterprise usually has several DHCP servers#
+stop
+
+def domain name system server
+start
+DNS stands for domain name system
+convert names to IP addresses
+convert IP addresses to names
+load is balanced across many servers
+can be managed by ISP
+can be managed by an IT department
+regarded as a critical resource
+stop
+
+def proxy server
+start
+an intermediate server
+recieves requests from clients on the same network
+performs requests for clients from other servers
+provides results from other servers for clients
+provides access control
+provides caching
+provides URL filtering
+provides content scanning
+stop
+
+def mail server
+start
+store incoming mail
+send outgoing mail
+often managed by ISP
+often managed by IT department
+regarded as important
+complex to set up
+stop
+
+def authentication server
+start
+provide login authentication
+rarely seen on a home network
+often used in enterprise
+often redundent servers
+regarded as important
+stop
+
+def security information and event management
+start
+SIEM stands for security information and event management
+logs security events
+provides real time information
+provides security alerts
+log agggregation
+long term log storage
+may include advanced reporting features
+may be used for data correlation
+may be used for forensic analysis
+used to store details after an event
+may be integrated with syslog
+stop
+
+def syslog
+start
+usually a central logging reciever
+may be integrated with SIEM
+reqires a large amount of disk space
+WORM drive technology
+WORM stands for write once read many
+stop
+
+def IDS and IPS 
+start
+IDS stands for intrusion detection system
+IPS stands for intrusion prevention system
+targets exploits against operating systems
+taregts exploits against applications
+targets exploits against butter overflows
+IDS is involved in raising an alert when an attack takes place
+IPS aims to stop an attack before it gets into the network
+an all in one firewall may include IDS and IPS
+stop
+
+def all in one security device
+start
+UTM starts for unified threat management
+sometimes called next generation firewalls
+sometimes called UTM device
+sometimes called web security gateway
+provides a URL filter
+provides content inspection
+provides malware inspection
+provides spam filtering
+may include a CSU
+CSU stands for channel service unit
+a CSU is responsible for connecting to a network
+may include a DSU 
+DSU stands for data service unit
+may include routing functionality
+may include switching functionality
+may include QoS functionality
+stop
+
+def endpoint management server
+start
+allows all devices to be managed from one location
+requires an agent on the device
+the endpoint management server sends commands
+agents on devices execute the commands
+allows software installations
+allows driver installations
+allows software updates
+allows security patching
+allows remote trouble shooting
+stop
+

@@ -1,0 +1,139 @@
+questions:
+1. A user brings a technitian their laptop for repair,
+The laptop {VAR}
+The user insists that the screen should be repaired rather than the device replaced if possible. What should the technitian tell them?
+
+a
+and shows them that the display is black even when the device is powered on. 
+The laptop has an LCD screen lit by a cold cathode flourescent lamp. When you examine the screen, you see that data is visible on the screen when examined with a bright light. 
+correct. Tell them that it may be possible to replace the CCFL backlight to repair the screen
+
+b
+and shows them that the display is black even when the device is powered on. 
+The laptop has an LCD screen lit by light emmiting diodes. When you examine the screen, you see that data is visible on the screen when examined with a bright light. 
+correct. Tell them that the backighting is faulty, that it may be difficult just to replace the backlight, that you may need to replace the whole screen but that you will investigate further.
+
+c
+and shows them that the display is normal apart from faint outlines resembling they layout of a website they often use, which are permanently on the screen. 
+The laptop has an OLED display. 
+correct. Tell them that their screen has degraded and you may be able to replace it
+
+d. Tell them that you can fix the individual leds in their screen which are causing the fault. 
+e. Tell them that they need to replace their entire device. 
+f. Tell them that their video card is faulty and that you many be able to replace it.
+g. Tell them that there is not enough power
+
+
+
+2. A user is interested in buying a new laptop, and is confused as to how the type of screen on the laptop should impact what they choose.
+They say that the device they buy should
+
+a have low power consumption and be cheap
+correct. Laptop with an LCD screen backlit by LEDS.
+
+b have the abilility to display true black pixels for the cheapest cost. 
+correct. Laptop with an passive matrix organic LED screen. 
+
+c have the ability to display true black pixels on a large screen at high resolution.
+correct. Laptop with an active matrix organic LED screen. 
+
+d Laptopn with an LCD screen backlit by a cold cathod flourescent lamp. 
+e. Laptop with a screen which can be adjusted for brightness
+f. Laptop with a low power video card
+g. Laptop with a high powered video card
+h. Laptop with a screen resolution of at least 1080p
+
+3. which of the following is true/false
+
+true:
+LCD screens are lightweight
+LCD screen are cheap
+LCD screens struggle to display black well
+LCD screens are backlit by LEDs or CCFL
+The LEDs in an LCD screen use DC power
+The CCFL in an LCD screen uses AC power
+The LEDs in an LCD screen do not require an inverter 
+The CCFL in an LCD screen requires an inverter
+A CCFL in an LCD screen requires higher power than LEDs 
+CCFL LCD screens are less common now
+CCFL LCD screens tend to be older
+
+false:
+LCD screens are heavy
+LCD screen are expensive
+LCD screens display black well
+LCD screens are not backlit
+The LEDs in an LCD screen use AC power
+The CCFL in an LCD screen uses DC power
+The LEDs in an LCD screen require an inverter 
+The CCFL in an LCD screen does not require an inverter
+A CCFL in an LCD screen requires lower power than LEDs 
+CCFL LCD screens are more common now
+CCFL LCD screens tend to be newer
+
+4. which of the following is true/false
+true
+OLED screen degrade over time
+OLED screens are flexible
+OLED screens do not require glass
+OLED screens do not require a backlight
+In PMOLED screens, each line on the screen is controlled sequentially, one by one
+In AMOLED there is a Thin Film Transistor (TFT) backplane that directly accesses and enables or disables individual pixels
+AMOLED screens allow higher screen resolutions
+AMOLED screens allow higher screen sizes
+
+false
+OLED screens do not degrade over time
+OLED screens are inflexible
+OLED screens require glass
+OLED screens require a backlight
+In PMOLED screens, there is a Thin Film Transistor (TFT) backplane that directly accesses and enables or disables individual pixels
+In AMOLED each line on the screen is controlled sequentially, one by one
+PMOLED screens allow higher screen resolutions
+PMOLED screens allow higher screen sizes
+
+4. which of the following is true/false
+true
+LCD screen are less expensive than OLED 
+OLED screens are more expensive than LCD
+OLED screens display black better than LCD
+LCD screens use less power than OLED
+OLED screen use more power than LCD
+
+false
+LCD screen are more expensive than OLED 
+OLED screens are less expensive than LCD
+LCD screens display black better than OLED
+OLED screens use less power than LCD
+LCD screen use more power than OLED
+
+5. Which of the following would you expect to find in your screen pannel:
+expect:
+Camera
+Microphone
+Bluetooth antenae
+Wifi antenae
+
+not expect:
+Graphics card
+RAM
+Battery
+Power lead
+
+6. Which of the following are true/false:
+true
+The microphone in a laptop is often inadequate for professional use
+Professional audio capture on a laptop will probably require an aftermarket microphone
+Laptop wifi antennae often wrap around the laptop screen
+Laptop bluetooth antennae often wrap around the laptop screen
+Hybrid laptops have detatchable keyboards and touchscreen
+Some laptops may have touchscreen interfaces
+Some laptops may allow the use of stylus for graphical interface
+
+false
+The microphone in a laptop is often as good as a good USB microphone
+Professional audio capture on a laptop seldom requires an aftermarket microphone
+Laptop wifi antennae often wrap around the laptop keyboard
+Laptop bluetooth antennae often wrap around the laptop keyboard
+A device with a touchscreen interface is not a laptop
+Stylus for graphical work are now outdated

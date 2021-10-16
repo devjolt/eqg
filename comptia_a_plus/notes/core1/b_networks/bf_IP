@@ -1,0 +1,130 @@
+def IP addressing
+start
+IPv4 is older than IPv6
+IPv4 is an OSI layer 3 address
+IPv6 is an OSI layer 3 address
+IPv4 addresses are made of 4 bytes
+IPv4 addresses are made of 4 octets
+IPv4 addresses are made of 32 bits
+Each of the 4 numbers in an IPv4 address is between 0 and 255#
+IPv6 addresses are made of 16 bytes
+IPv6 addresses are made of 128 bits
+leading zeros in IPv6 addresses can be dropped
+the first 64 bits in an IPv6 address is the network prefix
+the last 64 bits in an IPv6 address is the host network address
+every device needs a unique IP address
+stop
+
+def networking with IPv4
+start
+every device needs a unique IP address
+a subnet mask is used by the local device to determine what subnet it is on
+subnet mask is not usually transmitted accross the netowrk
+default gateway is the IP address of a router on your subnet
+a router allows you to communicate outside of your local subnet
+default gateway must be an IP address on the local subnet
+an IP address starting 255... is likely to be a subnet mask
+an IP address starting with 196... is likely to be a default gateway
+stop
+
+def DNS servers
+start
+routers understand IP addresses
+routers do not understand url names
+DNS stands for domain name services
+DNS translates between url names and IP addresses
+two DNS servers will often be configured
+8.8.8.8 is a google DNS server
+8.8.4.4 is a google DNS server
+stop
+
+def DHCP
+start
+BOOTP is the bootstrap protocol
+BOOTP automatically handles much IPv4 configuration
+BOOTP requires some manual configuration
+BOOTP was superceded by DHCP
+DHCP stands for dynamic host configuration protocol
+BOOTP was released in 1993
+DHCP was released in 1997
+DHCP provides automatic address/IP configuration
+DHCP works for almost all devices
+stop
+
+def DHCP steps
+start
+new clients broadcast to udp/67
+local subnet DHCP server redundancy can be achieved with an external DHCP server
+use of external DHCP server requires a router with DHCP relap enabled
+DHCP relay and IP helper are the same thing
+IP helper allows the use of an external DHCP server
+DHCP servers recieving a udp/67 request will offer the first available IP address from a large pool
+DHCP servers offer IP addresses on udp/68
+client devices usually choose the first offer they recieve from multiple DHCP servers
+client devices broadcast through udp/67 to request an available IP
+DHCP servers acknowledge a client's request through udp/68
+stop
+
+def dynamic and static IP
+start
+DHCP servers recieving a udp/67 request will offer the first available IP address from a large pool
+IP address will occasionally change by default
+DHCP can be disabled on a device
+IP address can be configured manually
+an IP reservation associates a MAC address with an IP address
+IP reservations happen on the DHCP server
+IP reservation makes an IP address static
+stop
+
+
+def APIPA 
+start
+APIPA stands for automatic private IP addressing 
+a link local address allows you to communicate locally with a DHCP server
+link local addresses are not forwarded by routers
+169.254.0.1 to 169.254.254.255 are reserved for link local addresses
+link local address are assigned automatically
+ARP confirms that an address isn't currently in use
+ARP stands for address resolution protocol
+stop
+
+def IPvSix link local addresses
+start
+IPv6 local link addresses are non routable
+IPv6 addresses only work on the local subnet
+IPv6 local link addresses are always assigned
+IPv6 local link addresses atart with fe80
+the last 64 bits of a IPv6 local link address often correlates with MAC address
+stop 
+
+def SSL virtual private network
+start
+uses SSL/TLS protocol
+works on tcp/443
+avoids running into most firewall issues
+authenticate users without digital certificates
+authenticate users without shared passwords
+can run inside a browser or client
+also called client to side VPNs
+also called remote access VPNs
+requires software on user device
+stop
+
+def LAN and VLAN 
+start
+LAN stands for local area network
+a LAN is a group of devices in the same broadcast domain seperated physically
+VLAN stands for virtual local area network
+a VLAN is a group of devices in the same broadcast domain seperated logically
+stop
+
+def network address translation
+start
+NAT stands for network address translation
+NAT translates internal IP to external
+all devices on a subnet have the same external address
+NAT can happen through a router
+
+
+stop
+

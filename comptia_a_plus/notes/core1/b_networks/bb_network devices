@@ -1,0 +1,513 @@
+device definitions
+items = (
+    ('network interface card', 'computer expansion card for connecting to a network'),
+    ('repeater', 'receives a signal and retransmits it'), 
+    ('hub', 'connects multiple devices to make them act as a single network segment'),
+    ('bridge', 'creates a single, aggregate network from multiple network segments'),
+    ('switch', 'connects networked devices by using packet switching to receive and forward data to destination devices"),
+    ('router', 'forwards data packets between computer networks via the shortest path'),
+    ('wireless access point', 'allows other Wi-Fi devices to connect to a wired network'), 
+    ('local area network controller','manages access points in a wireless network'),
+    ('cable modem', 'allows your computer to communicate with an Internet service provider over a landline connection'),
+    ('digital subscriber line modem', 'provides broadband internet connection'),
+)
+
+Acronyms
+items = (
+    ('computer expansion card for connecting to a network', 'NIC'),
+    ( 'allows other Wi-Fi devices to connect to a wired network', 'WAP'),
+    ( 'local area network', 'LAN'),
+    ('wireless network standard', '802.11'),
+    ('unique identifier assigned to a network interface controller', 'MAC'),
+    ('wide area network', 'WAN'),
+    ('integrated circuit chip customized for a particular use', 'ASIC'),
+    ('virtual local area network', 'VLAN'),
+    ('a protocol that builds a loop-free logical topology for Ethernet networks', 'STP'),
+    ('using an ethernet cable to provide power', 'EoP'),
+    ('using a power cable to provide ethernet data', 'PoE'),
+    ('high speed internet connection', 'DSL'),
+    ('unique address that identifies a device on the internet or a local network', 'IP'),
+)
+
+Tools for solutions
+items = (
+    ('upgrade a laptop with the ability to send and recieve data over PAN', 'network interface card'),
+    ('extend the range of existing wifi signal', 'repeater'),
+    ('connect multiple devices to create a single network segment', 'hub'),
+    ('join multiple network segments to create an aggregate network','bridge'),
+    ('manage access points in a wireless network', 'LAN controller'),
+    ('use a landline connection to access the internet', 'cable modem'),
+    ('allow wifi enabled devices to access a wired network', 'WAP'),
+    ('allow devices on a network to communicate', 'switch'),
+)    
+
+#OSI level 1
+
+def cable modems
+correct = (
+    "used for broadband",
+    "multiple frequencies",
+    "can handle different traffic types",
+    "can recieve data on the cable network",
+    "uses data over cable service interface specification",
+    "uses DOCSIS standard",
+    "suitable for high speed networking",
+    "4 mbits/s through 250 Mbits speeds are common",
+    "gigabit speeds are possible",
+    "can be used to access multiple services",
+    "suitable for data, amongst other services",
+    "suitable for voice, amongst other services",
+    "suitable for video, amongst other services",
+)
+incorrect = (
+    "not used for broadband",
+    "single frequency",
+    "can handle only voice traffic",
+    "can handle only data traffic",
+    "can handle only video traffic",
+    "can recieve data on the wireless network",
+    "uses ASUS standard",
+    "uses DOCSTRNG",
+    "unsuitable for high speed networking",
+    "4 mbytes/s through 250 Mbytes speeds are common",
+    "gigabit speeds are not possible",
+    "can be used to access single services",
+    "suitable only for data",
+    "suitable only for voice",
+    "suitable only for video",
+)
+
+
+
+def patch panels
+correct = (
+"you only need to punch down blocks and rj45 connectors once",
+"runs from desks are made once to patch panels",
+"patch panel connection to switch can easily be changed",
+"no special tools, using existing cables",
+)
+
+incorrect = (
+"require you to punch down blocks and rj45 connectors multiple times",
+"runs from desks are made several times to patch panels",
+"patch panel to switch is difficult to change",
+"special tools required",
+)
+
+
+
+Repeater
+correct = (
+    "a hub is a type of repeater",
+    "can, among other things, recieve a signal", 
+    "can, among other things, regenerate a signal",
+    "can, among other things, resend a signal", 
+    "can not make forwarding decisions",
+    "can recieve, regenerate and resend a signal", 
+    "can boost copper connections",
+    "can boost fibre connections",
+    "can boost wireless connections",
+    "can convert one network media to another", 
+    "can extend wireless network reach", 
+    "can convert wireless signal to copper", 
+    "can convert wireless signal to fibre",
+    "can convert copper media to wireless",  
+    "can convert copper media to fibre",
+    "can convert fibre media to copper", 
+    "can convert fibre media to wireless",  
+)
+incorrect = (
+    "can, among other things, make forwarding decisions", 
+    "can not resend a signal", 
+    "can not regenerate a signal",
+    "can not recieve a signal",
+    "distributes traffic based on MAC address",
+    "can only recieve a signal",
+    "can only resend a signal",
+    "can only regenerate a signal", 
+    "can not boost copper connections",
+    "can not boost fibre connections",
+    "can not boost wireless connections",
+    "can not convert one network media to another", 
+    "can not extend wireless network reach", 
+    "can not convert wireless signal to copper", 
+    "can not convert wireless signal to fibre",
+    "can not convert copper media to wireless",  
+    "can not convert copper media to fibre",
+    "can not convert fibre media to copper", 
+    "can not convert fibre media to wireless",  
+    "can only boost copper connections",
+    "can only boost fibre connections",
+    "can only boost wireless connections",
+    "can only convert one network media to another", 
+    "can only extend wireless network reach", 
+    "can only convert wireless signal to copper", 
+    "can only convert wireless signal to fibre",
+    "can only convert copper media to wireless",  
+    "can only convert copper media to fibre",
+    "can only convert fibre media to copper", 
+    "can only convert fibre media to wireless",  
+)
+
+Hub
+correct = (
+    "multi port repeater", 
+    "traffic going in one port is repeated to every other port",
+    "is half duplex",
+    "two devices can't communicate through a hub",  
+    "less efficient at higher speed",
+    "data transfer rates betwee 10 and 100 megabit",
+    "hub technology doesn't scale well",
+    "makes connected devices act as a single network segment", 
+)
+incorrect = (
+    "single port repeater", 
+    "traffic going in one port is repeated to every other port",
+    "is full duplex",
+    "is double duplex",
+    "two devices can communicate through a hub",  
+    "more efficient at higher speed",
+    "data transfer rates betwee 10 and 100 gigabit",
+    "hub technology scales well", 
+)
+
+
+def DSL modem
+correct = (
+    "ADSL (asymmetric digital subscriber line)",
+    "uses telephone lines",
+    "download speed faster than upload speed (asymetric)",
+    "10,000 foot limitation form central office",
+    "52 mbit downstream, 16mbit upstream common",
+    "faster speeds possible if closer to CO",
+)
+incorrect = (
+    "SDSL (symmetric digital subscriber line)",
+    "uses power lines",
+    "download speed slower than upload speed",
+    "download speed the same as upload speed",
+    "1,000 foot limitation form central office",
+    "100,000 foot limitation form central office",
+    "50,000 foot limitation form central office",
+    "16mbit downstream, 52mbit upstream common",
+    "faster speeds possible if further from CO",
+)
+
+
+
+
+
+Network interface card #1 , #1 has mac address
+correct = (
+    "every device on the network has network interface card", 
+    "a laptop could have a network interface card", 
+    "a desktop computer could have a network interface card", 
+    "a server will have a network interface card", 
+    "a printer could have a network interface card", 
+    "a router will have a network interface card",
+    "a switch will have a network interface card", 
+    "a phones will have a network interface card",
+    "a tablet could have a network interface card",
+    "a camera have a network interface card", 
+    "network interface cards are specific to network type", 
+    "network interface cards are often built into the motherboard", 
+    "network interface cards may be specific to ethernet", 
+    "network interface cards may be specific to WAN", 
+    "network interface cards may be specific to PAN",
+    "network interface cards may be specific to 802.11",
+    "network interface cards may be specific to NFC",
+    "expansion cards may enable addition of network interface cards", 
+    "expansion cards may be single or multi port", 
+    "expansion cards may be for copper or fibre connections", 
+)
+incorrect = (
+    "devices already on the network do not need a network interface card", 
+    "a laptop never has a network interface card", 
+    "a desktop computer never has a network interface card", 
+    "a server never has a network interface card", 
+    "a printer never has a network interface card", 
+    "a router never has a network interface card",
+    "a switch never has a network interface card", 
+    "a phones will never have a network interface card",
+    "a tablet never has a network interface card",
+    "a camera never has a network interface card", 
+    "all network interface cards are network agnostic", 
+    "network interface cards are always added as expansions", 
+    "network interface cards cannot accomodate ethernet", 
+    "network interface cards cannot accomodate WAN", 
+    "network interface cards cannot accomodate PAN",
+    "network interface cards cannot accomodate 802.11",
+    "network interface cards cannot accomodate NFC",
+    "network interface cards only accomodate ethernet", 
+    "network interface cards only accomodate WAN", 
+    "network interface cards only accomodate PAN",
+    "network interface cards only accomodate 802.11",
+    "network interface cards only accomodate NFC",
+    "expansion cards replace network interface cards", 
+    "expansion cards are all multi port", 
+    "expansion cards cannot accomodate copper connections", 
+    "expansion cards cannot accomodate fibre connections",
+)
+
+
+bridge
+correct = (
+    'creates a single network from multiple network segments',
+    "switch with two to four ports", 
+    "makes forwarding decisions", 
+    "connects different physical networks",
+    "can connect different topologies",
+    "can connect ethernet to WAN",
+    "less impacted by physical network size limitations",
+    "distributes traffic based on MAC address",
+    "wireless access point is a type of bridge",
+)
+incorrect = (
+    "switch with a single port", 
+    "does not make forwarding decisions", 
+    "can connect networks of the same type",
+    "can connect similar topologies",
+    "can not connect ethernet to WAN",
+    "impacted by physical network size limitations",
+    "distributes traffic based on IP address",
+    "distributes traffic based on VIN number address",
+    "wireless access point is an type of repeater",
+)
+
+
+def WAP wireless access point #2
+correct = (
+    "not a wireless router",
+    "a wireless router is a router and WAP on a single device",
+    "WAP is a bridge which extends the wired network onto the wireless network",
+    "makes forwarding decisions",
+    "basen on mac address",
+)
+incorrect = (
+    "a type of wireless router",
+    "a wireless router is a managed switch and WAP on a single device",
+    "WAP is a router which extends the wired network onto the wireless network",
+    "WAP is a bridge which extends the wireless network onto the wired network",
+    "does not make forwarding decisions",
+    "basen on IP address",
+    "basen on ISBN address",
+)
+
+
+def Wireless LAN controllers
+correct = (
+    "centralised management of WAPS",
+    "wireless LAN controllers have management functions",
+    "allow deployment of new access points",
+    "performance and security monitoring",
+    "configure and deploy changes to all switches",
+    "report on access point use",
+    "usually a proprietary system",
+    "the wireless controller is paired with the access points",
+    "can also be cloud based",
+)
+incorrect = (
+    "decentralisd management of WAPS",
+    "no management functions",
+    "each new access point requires a seperate LAN controller",
+    "no performance monitoring",
+    "no security monitoring",
+    "switches deploy changes to all LAN controllers",
+    "reporting data unavailable",
+    "out of the box system",
+    "the wireless controller is paired with a router",
+    "cannot be cloud based",
+)
+
+
+managed vs unmanaged switches
+correct = (
+    "acts as a bridge within hardware", 
+    "uses application specific integrated circuits",
+    "uses ASIC", 
+    "forwards traffic based on data link address", 
+    "provide PoE", 
+    "can provide power to connected devices", 
+    "includes routing functionality", 
+    "can be multilayered", 
+    "can be managed", 
+    "can be unmanaged",
+)
+incorrect = (
+    "acts as a switch within hardware",
+    "acts as a repeater within hardware",
+    "acts as a hub within hardware", 
+    "uses application signal integrated circuits",
+    "uses ASCII", 
+    "forwards traffic based on MAC address",
+    "forwards traffic based on IP address", 
+    "cannot provide PoE", 
+    "cannot provide power to connected devices", 
+    "does not include routing functionality", 
+    "cannot be multilayered", 
+    "cannot be managed", 
+    "cannot be unmanaged",
+    "can only be managed", 
+    "can only be unmanaged",
+)
+
+unmanaged switch
+correct = (
+    "easy to use", 
+    "self managing",
+    "plug and play", 
+    "very few config options", 
+    "fixed configurations",
+    "Does not support VLANS",
+    "very little integration with other devices",
+    "no management protocols",
+    "low price point",
+    "simple so less expenisve",
+)
+
+incorrect = (
+    "complicated to use", 
+    "requires active managing",
+    "needs to be configured to each device", 
+    "requires careful configuration", 
+    "numerous configuration options",
+    "supports VLANS",
+    "well integrated with other devices",
+    "many management protocols",
+    "expensive",
+    "complex so high price point",
+)
+
+managed switch
+correct = (
+    "VLAN support",
+    "interconnects with other switches via 802.11",
+    "traffic prioritisation",
+    "voice gets higher priority",
+    "redundancy support",
+    "spanning tree protocol STP",
+    "external management",
+    "simple network management protocol",
+    "port mirroring",
+    "captured packets for trouble shooting",
+    "can connect network analyser",
+)
+
+incorrect = (
+    "no VLAN support",
+    "interconnects with other switches via NFC",
+    "does not interconnect with other switches",
+    "no traffic prioritisation",
+    "no redundancy support",
+    "Simple Message Transfer Protocol",
+    "internal management",
+    "no port mirroring",
+    "captured IP addresses for trouble shooting",
+    "cannot capture packets for trouble shooting",
+    "network analysers unsupported",
+)
+
+def routers
+correct = (
+    "routes traffic between IP subnets",
+    "makes forwarding decisions based on IP address",
+    "sometimes called layer 3 switch if inside of a switch",
+    "sometimes called multilayer switch if inside of a switch",
+    "can connect divers network types",
+    "can connect copper networks to other types", 
+    "can connect fibre networks to other types", 
+    "can connect wireless networks to other types", 
+)
+incorrect = (
+    "routes traffic between MAC addresses",
+    "does not make forwarding decisions",
+    "makes forwarding decisions based on MAC address",
+    "sometimes called layer 4 switch if inside of a switch",
+    "sometimes called layer 2 switch if inside of a switch",
+    "sometimes called layer 5 switch if inside of a switch",
+    "sometimes called unilayer switch if inside of a switch",
+    "sometimes called a layer 3 switch if inside of another router",
+    "can only connect similar network types",
+    "cannot connect copper networks to other types", 
+    "cannot connect fibre networks to other types", 
+    "cannot connect wireless networks to other types", 
+)
+
+
+def firewalls
+correct = (
+    "can filter by port number",
+    "can filter by application",
+    "can filter OSI layer 4 TCP traffic",
+    "can filter OSI layer 4 UDP traffic",
+    "can encrypt traffic into the network", 
+    "can encrypt traffic out of the network",
+    "protect traffic between switches",
+    "can proxy traffic",
+    "common security technique",
+    "most firewalls can be layer 3 devices (routers)",
+    "usually sits on the ingress or exgress of the network",
+)
+incorrect = (
+    "can filter by MAC address",
+    "can filter by IP address",
+    "can filter OSI layer 3 TCP traffic",
+    "can filter OSI layer 3 UDP traffic",
+    "can filter OSI layer 5 TCP traffic",
+    "can filter OSI layer 5 UDP traffic",
+    "can not encrypt traffic into the network", 
+    "can not encrypt traffic out of the network",
+    "protect traffic between routers",
+    "can act as a VPN traffic",
+    "less used security technique",
+    "most firewalls can be layer 6 devices (routers)",
+    "most firewalls can be layer 2 devices (routers)",
+    "usually sits within the network",
+)
+
+
+
+def power over ethernet
+correct = (
+    "power can be provided on an ethernet cable",
+    "a single wire can provice network and electricity", 
+    "phones can use PoE", 
+    "cameras can use PoE", 
+    "wireless access points  can use PoE",
+    "useful in difficult to power areas",
+    "power provided at the switch",
+    "endspands are switches with built in power supply",
+    "midspans are switches with in line power injectors",
+    "PoE switches are labelled",
+)
+
+correct = (
+    "power cannot be provided on an ethernet cable",
+    "network and electricity each require a seperate wire", 
+    "phones cannot use PoE", 
+    "cameras cannot use PoE", 
+    "wireless access points cannot use PoE",
+    "endspands are switches with in line power injectors",
+    "midspans are switches with built in power supply",
+)
+
+def ethernet over power (eop)
+correct = (
+    "EoP is also called power line communicatiion",
+    "uses IEEE standard 1901",
+    "speeds of 500 megabits per second",
+    "standard includes links to the premesis, amongst others",
+    "standard includes intra building networking, amongst others",
+    "standard includes links to vehicles, amongst others",
+    "standard includes links to smart energy devices, amongst others",
+)
+incorrect = (
+    "EoP is also called power link communicatiion",
+    "uses IEEE standard 1081",
+    "speeds of 50 megabits per second",
+    "standard does not include links to the premesis",
+    "standard does not include intra building networking",
+    "standard does not include links to vehicles",
+    "standard does not include links to smart energy devices",
+)
+

@@ -1,0 +1,442 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static "comptia_a_plus/comptia_home.css" %}">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<main role="main">
+
+  <section class="jumbotron text-center navbar-dark bg-dark">
+    <div class="container">
+      <h1 class="text-warning">Comptia A+</h1>
+      <h1 class="text-primary">Practice either of the two exams, or a particular category of questions</h1>
+    </div>
+  </section>
+
+  <ul class='vert-nav'>
+    <li><a class="active" id = 'topbutton' href="#top">Top</a></li>
+    <li><a class='core-one' href="#core1">Core 1</a></li>
+    <li><a class='core-two' href="#core2">Core 2</a></li>
+  </ul>
+    
+  <div class = 'top-grid' >
+
+    <div class = 'grid-item'  id='top'>
+      <div class = 'menu-item'  id='one' style='display:none'>
+        <div class="card" style="width: 18rem;">
+          <a href="core_1_220_1001/random" target="_blank" class="btn btn-warning btn-lg btn-block" role="button" aria-pressed="true">
+            <h1 class="display-4">Core 1 220-1001 exam practise</h1>
+          </a>
+          <div class="card-body">
+            <div class="card-body text-left">
+              <h6 class="card-subtitle mb-2 text-muted">Or work on a specific area:</h6>
+              <ul>
+                <li><a href="#mobile-devices">mobile devices</a></li>
+                <li><a href="#networking-technology">networking technology</a></li>
+                <li><a href="#hardware">hardware</a></li>
+                <li><a href="#virtualization">virtualization and cloud computing</a></li>
+                <li><a href="#network-troubleshooting">network troubleshooting</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class='grid-item'>
+      <div class = 'menu-item' id='two' style='display:none'>
+        <div class="card" style="width: 18rem;">
+          <a class="btn btn-success btn-lg btn-block" role="button" aria-pressed="false">
+            <h1 class="display-4">Core 2 220-1002 Coming soon...</h1>
+          </a>
+          <div class="card-body">
+            <div class="card-body text-left">
+              <h6 class="card-subtitle mb-2 text-muted">Topics to be added:</h6>
+              <ul>
+                <li>installing and configuring operating systems</li>
+                <li>expanded security</li>
+                <li>software troubleshooting</li>
+                <li>operational procedures</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+    
+  <div class = 'mid-grid' id='core1' style='display:none'>
+    
+    <div class='grid-item'>
+      <div class = 'menu-item'>
+        <div id='mobile-devices' class="card" style="width: 18rem;">
+          <a href="core_1_220_1001/random_mobile_devices" target="_blank" class="btn btn-warning btn-lg btn-block" role="button" aria-pressed="true">
+            <h1 class="display-5">Mobile devices questions</h1>
+          </a>
+          <div class="card-body">
+            <div class="card-body text-left">
+              <h6 class="card-subtitle mb-2 text-muted">Or choose a sub-topic:</h6>
+              <ul>
+                
+                <!--<li>Laptop Hardware</li>
+                <li>Laptop Displays</li>
+                <li>Laptop Features</li>
+                <li>Mobile Devices</li>
+                <li>Mobile Device Accessories</li>
+                <li>Mobile Device Connectivity</li>
+                <li>Mobile Device Synchronization</li>-->
+
+                {% for item in mobile_list %}
+                  <li><a href='core_1_220_1001/{{item.link}}/'>{{item.name}}</a></li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class='grid-item'>
+      <div class = 'menu-item'>
+        <div id='networking-technology' class="card" style="width: 18rem;">
+          <a href="core_1_220_1001/random_networking_technology/" class="btn btn-warning btn-lg btn-block" role="button" aria-pressed="true">
+            <h1 class="display-5">Networking technology questions</h1>
+          </a>
+          <div class="card-body">
+            <div class="card-body text-left">
+              <h6 class="card-subtitle mb-2 text-muted">Or choose a sub-topic:</h6>
+              <!--
+              <ul>
+                <li>Ports and Protocols</li>
+                <li>Network Devices</li>
+                <li>SOHO Networks</li>
+                <li>Wireless Networks</li>
+                <li>Network Services</li>
+                <li>Network Configurations</li>
+                <li>Internet Connections</li>
+                <li>Network Tools</li>
+              </ul>
+              -->
+              <ul>
+              {% for item in networking_list %}
+                  <li><a href='core_1_220_1001/{{item.link}}/'>{{item.name}}</a></li>
+              {% endfor %}
+              </ul>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class='grid-item'>
+      <div class = 'menu-item'>
+        <div id='hardware' class="card" style="width: 18rem;">
+          <a href="#" class="btn btn-warning btn-lg btn-block" role="button" aria-pressed="true">
+            <h1 class="display-5">Hardware questions</h1>
+          </a>
+          <div class="card-body">
+            <div class="card-body text-left">
+              <h6 class="card-subtitle mb-2 text-muted">Or choose a sub-topic:</h6>
+              <ul>
+                <li>Cables and Adapters</li>
+                <li>Connectors</li>
+                <li>Memory</li>                          
+                <li>Storage</li>
+                <li>Motherboards CPUs and Addon Cards</li>
+                <li>Peripherals</li>
+                <li>Power</li>
+                <li>Custom PCs</li>
+                <li>Common Devices</li>
+                <li>SOHO Multifunction Devices</li>
+                <li>Print Technologies</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class='grid-item'>
+      <div class = 'menu-item'>
+        <div id='virtualization' class="card" style="width: 18rem;">
+          <a href="#" class="btn btn-warning btn-lg btn-block" role="button" aria-pressed="true">
+            <h1 class="display-5">virtualization and cloud computing questions</h1>
+          </a>
+          <div class="card-body">
+            <div class="card-body text-left">
+              <h6 class="card-subtitle mb-2 text-muted">Or choose a sub-topic:</h6>
+              
+              <ul>
+                <li>Cloud Computing</li>
+                <li>Clientside Virtualization</li>
+              </ul>
+                        
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class='grid-item'>
+      <div class = 'menu-item'>
+        <div id='network-troubleshooting' class="card" style="width: 18rem;">
+          <a href="#" class="btn btn-warning btn-lg btn-block" role="button" aria-pressed="true">
+            <h1 class="display-5">Network trouble shooting</h1>
+          </a>
+          <div class="card-body">
+            <div class="card-body text-left">
+              <h6 class="card-subtitle mb-2 text-muted">Or choose a sub-topic:</h6>
+         
+              <ul>
+                <li>Computer Hardware</li>
+                <li>Storage</li>
+                <li>Displays</li>
+                <li>Mobile Devices</li>
+                <li>Printers</li>
+                <li>Networks</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+
+  <div class = 'mid-grid' id='core2' style='display:none'>
+    
+    <div class='grid-item'>
+      <div class = 'menu-item'>
+        <div class="card" style="width: 18rem;">
+          <a href="#" class="btn btn-success btn-lg btn-block" role="button" aria-pressed="true">
+            <h1 class="display-5">Installing and configuring operating systems</h1>
+          </a>
+          <div class="card-body">
+            <div class="card-body text-left">
+              <h6 class="card-subtitle mb-2 text-muted">Including:</h6>
+              
+              <ul>
+                <li>Operating Systems</li>
+                <li>Microsoft Windows</li>
+                <li>Installing Operating Systems</li>
+                <li>The Windows Command Line</li>
+                <li>Windows Features</li>
+                <li>Windows Control Panel</li>
+                <li>Installation Concepts</li>
+                <li>Windows Networking</li>
+                <li>macOS and Linux</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class='grid-item' id='two'>
+      <div class = 'menu-item'>
+        <div class="card" style="width: 18rem;">
+          <a href="#" class="btn btn-success btn-lg btn-block" role="button" aria-pressed="true">
+            <h1 class="display-5">Expanded security</h1>
+          </a>
+          <div class="card-body">
+            <div class="card-body text-left">
+              <h6 class="card-subtitle mb-2 text-muted">Including:</h6>
+        
+              <ul>
+                <li>Physical Security</li>
+                <li>Logical Security</li>
+                <li>Wireless Security</li>
+                <li>Malware</li>
+                <li>Security Threats</li>
+                <li>Windows Security</li>
+                <li>Workstation Security</li>
+                <li>Mobile Device Security</li>
+                <li>Data Destruction and Disposal</li>
+                <li>SOHO Network Security</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class='grid-item'>
+      <div class = 'menu-item'>
+        <div class="card" style="width: 18rem;">
+          <a href="#" class="btn btn-success btn-lg btn-block" role="button" aria-pressed="true">
+            <h1 class="display-5">Software trouble- shooting</h1>
+          </a>
+          <div class="card-body">
+            <div class="card-body text-left">
+              <h6 class="card-subtitle mb-2 text-muted">Including:</h6>
+        
+              <ul>
+                <li>Windows</li>
+                <li>Security Issues</li>
+                <li>Malware Removal</li>
+                <li>Mobile Applications</li>
+                <li>Mobile Device Security</li>
+              </ul>
+                            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class='grid-item'>
+      <div class = 'menu-item'>
+        <div class="card" style="width: 18rem;">
+          <a href="#" class="btn btn-success btn-lg btn-block" role="button" aria-pressed="true">
+            <h1 class="display-5">Operational procedures</h1>
+          </a>
+          <div class="card-body">
+            <div class="card-body text-left">
+              <h6 class="card-subtitle mb-2 text-muted">Including:</h6>
+        
+              <ul>
+                <li>Documentation</li>
+                <li>Change Management</li>
+                <li>Disaster Recovery</li>
+                <li>Safety Procedures</li>
+                <li>Environmental Impacts</li>
+                <li>Privacy Licensing and Policies</li>
+                <li>Communication and Professionalism</li>
+                <li>Scripting</li>
+                <li>Remote Access</li>
+              </ul>
+                            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+
+  <div class='mid-grid'>
+    <details>
+      <summary>Core 1 syllabus map</summary>
+        <ul>
+          <li>mobile devices</li>
+          <ul>
+            <li>Laptop Hardware</li>
+            <li>Laptop Displays</li>
+            <li>Laptop Features</li>
+            <li>Mobile Devices</li>
+            <li>Mobile Device Accessories</li>
+            <li>Mobile Device Connectivity</li>
+            <li>Mobile Device Synchronization</li>
+          </ul>
+          <li>networking technology</li>
+          <ul>
+            <li>Ports and Protocols</li>
+            <li>Network Devices</li>
+            <li>SOHO Networks</li>
+            <li>Wireless Networks</li>
+            <li>Network Services</li>
+            <li>Network Configurations</li>
+            <li>Internet Connections</li>
+            <li>Network Tools</li>
+          </ul>
+          <li>hardware</li>
+          <ul>
+            <li>Cables and Adapters</li>
+            <li>Connectors</li>
+            <li>Memory</li>                          
+            <li>Storage</li>
+            <li>Motherboards CPUs and Addon Cards</li>
+            <li>Peripherals</li>
+            <li>Power</li>
+            <li>Custom PCs</li>
+            <li>Common Devices</li>
+            <li>SOHO Multifunction Devices</li>
+            <li>Print Technologies</li>
+          </ul>
+          <li>virtualization and cloud computing</li>
+          <ul>
+            <li>Cloud Computing</li>
+            <li>Clientside Virtualization</li>
+          </ul>
+          <li>Troubleshooting</li>
+          <ul>
+            <li>Troubleshooting Computer Hardware</li>
+            <li>Troubleshooting Storage</li>
+            <li>Troubleshooting Displays</li>
+            <li>Troubleshooting Mobile Devices</li>
+            <li>Troubleshooting Printers</li>
+            <li>Troubleshooting Networks</li>
+          </ul>
+        </ul>
+    </details>
+  
+    <details>
+      <summary>Core 2 syllabus map</summary>
+        <ul>
+          <li>installing and configuring operating systems</li>
+          <ul>
+            <li>Operating Systems</li>
+            <li>Microsoft Windows</li>
+            <li>Installing Operating Systems</li>
+            <li>The Windows Command Line</li>
+            <li>Windows Features</li>
+            <li>Windows Control Panel</li>
+            <li>Installation Concepts</li>
+            <li>Windows Networking</li>
+            <li>macOS and Linux</li>
+          </ul>
+          <li>expanded security</li>
+          <ul>
+            <li>Physical Security</li>
+            <li>Logical Security</li>
+            <li>Wireless Security</li>
+            <li>Malware</li>
+            <li>Security Threats</li>
+            <li>Windows Security</li>
+            <li>Workstation Security</li>
+            <li>Mobile Device Security</li>
+            <li>Data Destruction and Disposal</li>
+            <li>SOHO Network Security</li>
+          </ul>
+          <li>software troubleshooting</li>
+          <ul>
+            <li>Troubleshooting Windows</li>
+            <li>Troubleshooting Security Issues</li>
+            <li>Malware Removal</li>
+            <li>Troubleshooting Mobile Applications</li>
+            <li>Troubleshooting Mobile Device Security</li>
+          </ul>
+          <li>operational procedures</li>
+          <ul>
+            <li>Documentation</li>
+            <li>Change Management</li>
+            <li>Disaster Recovery</li>
+            <li>Safety Procedures</li>
+            <li>Environmental Impacts</li>
+            <li>Privacy Licensing and Policies</li>
+            <li>Communication and Professionalism</li>
+            <li>Scripting</li>
+            <li>Remote Access</li>
+          </ul>
+        </ul>                                
+      </ul>
+                    
+    </details>
+  </div>
+</main>
+
+
+<script>
+  $("#one").fadeIn(200);
+  $("#two").fadeIn(400);
+  $('#core1').fadeIn(800);
+  $('#core2').fadeIn(1000);
+
+</script>
+
+
+{% endblock %}

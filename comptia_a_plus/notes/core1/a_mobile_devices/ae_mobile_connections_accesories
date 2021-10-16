@@ -1,0 +1,242 @@
+usb-c
+correct
+"can provide analog audio"
+"can provide power"
+"can provide data"
+"24 pins"
+"support USB 2.1"
+"support USB 3"
+"flatter than other USB connectors"
+"double sided"
+"have no top or bottom"
+
+incorrect
+"can only provide power"
+"can only provide data"
+"cannot provide power"
+"cannot be used for analog audio"
+"18 pins"
+"30 pins"
+"8 pins"
+"thicker than other USB connectors"
+"unidirectional"
+"can only be inserted when correctly oriented"
+"are TRRS"
+
+lightning
+correct:
+have no top or bottom
+can be used on all modern apple devices
+can be used in iphones
+can be used in ipads
+can be used in ipods
+supply power faster than micro usb
+supply power and transfer data
+are flat
+have 8 pins
+supply more power than older 30 pin connectors
+are more durable than older 30 pin connectors
+
+incorrect:
+must be inserted the correct way round
+come in 8 and 30 pin configurations
+can only be used in iphones
+can only be used in ipads
+can only be used in ipods
+can be used in legacy 30 pin apple devices
+are compatible with most android devices
+are compatible with USB C connectors
+supply power more slowly than micro usb
+only supply power
+only supply data
+are the same shape as a usb
+have 30 pins
+is TRRS
+
+
+mobile hotspots:
+correct = (
+    "may require additional charges and cost",
+    "allows you to extend a cellular data network to all other devices",
+    "can function as a personal wireless router",
+    "some mobile devices can be configured as a wireless server",
+    "other devices can connect via USB",
+    "requires the mobile device to have its own internet or data connection",
+)
+incorrect = (
+
+    "allows you to extend a cellular data network to all other devices",
+    "requires an additional a personal wireless router",
+    "mobile devices cannot be configured as a wireless server",
+    "other devices can connect via NFC",
+    "other devices can connect via PAN",
+    "other devices can connect via MAN",
+    "requires the device connection to the mobile device to have its own internet or data connection",
+)
+
+PAN:
+correct = (
+    'high speed communication',
+    '10m range', 
+    'used for tethering',
+    'used in headsets and headphones',
+    'used in health monitors',
+    'used for connecting to external speakers',
+    'Bluetooth',
+)
+incorrect = (
+    'low speed communication',
+    '1m range',
+    '20m range',
+    '10cm range',
+    '1m range', 
+    'used for phone payment systems',
+    'used for contactless card payments',
+    'used for in person information exchange',
+)
+
+
+NFC:
+correct = (
+    'for ending small amounts of data',
+    'wireless',
+    'limited range',
+    'less than 10cm range',
+    'used for phone payment systems',
+    'used for contactless card payments',
+    'used for in person information exchange',
+    'has encryption support',
+    'used in id cards',
+)
+
+IR:
+correct = (
+    "can be used to control other devices",
+    "cannot be used for file transfers",
+    "cannot be used for printing",
+    "is included on many smartphones",
+    "is included on many tablets",
+    "is included on many smartwatches",
+)
+incorrect = (
+    "cannot be used to control other devices",
+    "can be used for file transfers",
+    "can be used for printing",
+    "is not included on smartphones",
+    "is not included on tablets",
+    "is not included on smartwatches",
+)
+
+Which accessory would you recommend to:
+items = (
+("an apple user who wants to listen to audio privately", "headphones with a lightning connector"),
+("an android user wanting to listen to audio without physically connecting anything","bluetooth headphones"),
+("someone who wants to play stereo sound in their room", "gobile speaker"),
+("a user who wants a console experience on their tablet", "game pad"),
+("allow something to charge their and others' devices whilst away from home", "mobile battery pack"),
+("avoid scratches on their devices' screen", "screen protector"),
+("protect a phone when dropped","device protector"),
+("enable a phone to be used to take card payments","credit card reader"),
+("increase the storage capacity of a tablet", "micro-sd")
+)
+
+mobile:
+correct = (
+    "audio accessories may be hands free",
+    "audio accessories may connect via a TRRS jack",
+    "audio accessories may connect via USB-C",
+    "audio accessories may connect via lighning",
+    "audio accessories may connect via 3.5mm jack",
+    "audio accessories may connect via bluetooth",
+)
+incorrect = (
+    "audio accessories may connect via USB-A",
+    "audio accessories may connect via PAN",
+    "audio accessories may connect via LAN",
+    "audio accessories may connect via WAN",
+    "audio accessories may connect via 1/4 in jack",
+    "audio accessories may connect via IR",
+)
+
+protective covers
+correct = (
+    "screen protectors can be difficult to install correctly",
+    "screen protectors are harder to install than device protectors",
+    "device protectors are easier to install than screen protectors",
+    "screen protectors may prevent scratches to the screen",
+    "screen protectors do not provide shock absorbance for the device",
+    "screen protectors do not provide waterproofing",
+    "device protectors may provide waterproofing",
+    "device protectors never provide shock absorbance",
+    "device protectors may interfere with docking stations and interfaces",
+    "screen protectors do not interfere with docking stations and interfaces",
+)
+incorrect = (
+    "screen protectors are easy to install correctly",
+    "screen protectors are easier to install than device protectors",
+    "device protectors are harder to install than screen protectors",
+    "device protectors may prevent scratches to the screen",
+    "device protectors do not provide shock absorbance for the device",
+    "device protectors never provide waterproofing",
+    "screen protectors may provide waterproofing",
+    "screen protectors never provide shock absorbance",
+    "screen protectors may interfere with docking stations and interfaces",
+    "device protectors do not interfere with docking stations and interfaces",
+)
+
+credit card readers
+correct = (
+    "can make a phone into a point of sale",
+    "can make a tablet into a point of sale",
+    "can connect via an audio TRRS jack",
+    "can connect via lightning",
+    "can connect via USB",
+    "can connect via bluetooth",
+    "can provide email reciepts",
+    "can allow documents to be signed via touch",
+    "can provide immediate feedback via internet link",
+    "are ideal for small and mobile businesses"
+)
+incorrect = (
+    "can make an ereader into a point of sale",
+    "make a fitness monitor into a point of sale",
+    "can connect via IR",
+    "can connect via ethernet",
+    "can connect via NFC",
+    "can take cash payments",
+    "can allow signed documents to be scanned",
+    "can provide immediate credit feedback via internet link",
+    "do not require internet connection",
+    "require vision of the sky",
+)
+
+memory cards 
+correct = (
+    "SD cards are larger than micro SD cards",
+    "micro SD cards are smaller than SD cards",
+    "micro SD cards are easy to loose if not in the device",
+    "micro SD cards increase device storage",
+    "SD cards increase device storage",
+    "micro SD cards have SFF",
+    "SD cards are commonly used in Windows devices",
+    "SD cards are commonly used in Android devices",
+    "SD cards are not commonly used in iOS devices",
+)
+
+incorrect = (
+    "SD cards are smaller than micro SD cards",
+    "micro SD cards are larger than SD cards",
+    "all mobile devices accept SD cards",
+    "micro SD cards increase device RAM",
+    "micro SD cards increase device processor speed",
+    "micro SD cards increase device resoltuion",
+    "micro SD cards have NFC",
+    "micro SD cards have TRRS",
+    "SD cards are not commonly used in Windows devices",
+    "SD cards are not commonly used in Android devices",
+    "SD cards are commonly used in iOS devices",
+)
+
+
+angular, ionic, php,
+videos, marketing sales,

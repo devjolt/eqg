@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="/..">Home</a></li>
+      <li class="breadcrumb-item"><a href="/gcsemaths">GCSE Maths</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Algebra</li>
+    </ol>
+</nav>
+
+
+<div class="jumbotron">
+    <h1 class="display-4">Algebraic manipulation</h1>
+    <hr class="my-4">
+
+    <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <a class="nav-item nav-link active" id="algebra_basics" data-toggle="tab" href="#nav-algebra-basics" role="tab" aria-controls="nav-home" aria-selected="true">Basics</a>
+            <a class="nav-item nav-link" id="expanding-brackets" data-toggle="tab" href="#nav-expanding-brackets" role="tab" aria-controls="nav-expanding-brackets" aria-selected="false">Dealing with brackets</a>
+            <a class="nav-item nav-link" id="algebra-powers-indices" data-toggle="tab" href="#nav-algebra-powers-indices" role="tab" aria-controls="nav-algebra-powers-indices" aria-selected="false">Powers and indices</a>
+            <a class="nav-item nav-link" id="algebra-advanced-powers-indices" data-toggle="tab" href="#nav-algebra-advanced-powers-indices" role="tab" aria-controls="nav-algebra-advanced-powers-indices" aria-selected="false">Advanced powers and indices</a>
+            <a class="nav-item nav-link" id="algebra-surds" data-toggle="tab" href="#nav-algebra-surds" role="tab" aria-controls="nav-algebra-surds" aria-selected="false">Surds</a>
+            <a class="nav-item nav-link" id="algebra-solve" data-toggle="tab" href="#nav-algebra-solve" role="tab" aria-controls="nav-algebra-solve" aria-selected="false">Soving equations</a>
+
+        </div>
+    </nav>
+    <div class="tab-content" id="nav-tab">
+        <div class="tab-pane fade show active" id="nav-algebra-basics" role="tabpanel" aria-labelledby="nav-algebra-basics">
+            {% for item in basics %}
+                <a class="dropdown-item" href='{{item.link}}/' target="_blank">{{item.name}}</a>
+            {% endfor %}
+        </div>
+        <div class="tab-pane fade" id="nav-expanding-brackets" role="tabpanel" aria-labelledby="nav-expanding-brackets">
+            {% for item in brackets %}
+                <a class="dropdown-item" href='{{item.link}}/' target="_blank">{{item.name}}</a>
+            {% endfor %}
+        </div>
+        <div class="tab-pane fade" id="nav-algebra-powers-indices" role="tabpanel" aria-labelledby="nav-algebra-powers-indices">
+            {% for item in powers_indices %}
+                <a class="dropdown-item" href='{{item.link}}/' target="_blank">{{item.name}}</a>
+            {% endfor %}
+        </div>    
+        <div class="tab-pane fade" id="nav-algebra-advanced-powers-indices" role="tabpanel" aria-labelledby="nav-algebra-advanced-powers-indices">
+            {% for item in advanced_powers_indices %}
+                <a class="dropdown-item" href='{{item.link}}/' target="_blank">{{item.name}}</a>
+            {% endfor %}
+        </div>
+        <div class="tab-pane fade" id="nav-algebra-surds" role="tabpanel" aria-labelledby="nav-algebra-surds">
+            {% for item in surds %}
+                <a class="dropdown-item" href='{{item.link}}/' target="_blank">{{item.name}}</a>
+            {% endfor %}
+        </div>
+        <div class="tab-pane fade" id="nav-algebra-solve" role="tabpanel" aria-labelledby="nav-algebra-solve">
+            {% for item in solving_equations %}
+                <a class="dropdown-item" href='{{item.link}}/' target="_blank">{{item.name}}</a>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+{% endblock %}

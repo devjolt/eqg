@@ -1,0 +1,270 @@
+terms
+correct = (
+    "DSL stands for digital subscriber line",
+    "DSL used to stand for digital subscriber loop",
+    "ADSL stands for asymmetric digital subscriber loop",
+    "DSL and ADSL are interchangable",
+    "IP stands for internet protocol",
+    "TCP stands for transmission control protocol", 
+    "UDP stands for user datagram protocol ",
+    "HTTP stands for Hyper Text Transport Protocol",
+)
+incorrect = (
+    "DSL stands for digital service line",
+    "DSL used to stand for digital secure loop",
+    "ADSL stands for asymmetric digital service line",
+    "DSL and ADSL are not interchangable",
+    "IP stands for international protocol",
+    "TCP stands for transport control protocol", 
+    "UDP stands for usernet digital protocol ",
+    "HTTP stands for Hyper Transport Telenet Protocol",
+    "DSL stands for digital subscriber link",
+    "DSL used to stand for digital subscriber linkage",
+    "ADSL stands for asymmetric digital subscriber link",
+    "IP and TCP are interchangable",
+    "IP stands for interweb protocol",
+    "TCP stands for transmission closed protocol", 
+    "UDP stands for unicode datagram protocol",
+    "HTTP stands for Hyper Terminal Transport Protocol",
+)
+
+when a client sends data to a server:
+correct = (
+    "the ethernet payload is contained between an ethernet header and an ethernet trailer",
+    "the ethernet payload consists of an IP header followed by an IP payload",
+    "the IP payload consists of a TCP header followed by a TCP payload",
+    "the TCP payload is often HTTP data",
+)
+incorrect = (
+    "the ethernet payload is contained between a TCP header and a TCP trailer",
+    "the ethernet payload consists of an HTTP header followed by an IP payload",
+    "the IP payload consists of an ethernet header followed by an IP payload",
+    "the TCP payload is often IP data",
+    "the ethernet payload is contained between a HTML header and a HTML trailer",
+    "the ethernet payload consists of an HTTP header followed by a TCP payload",
+    "the IP payload consists of an ethernet header followed by an SMTP payload",
+    "the TCP payload is always POP3 data",
+)
+TCP vs 
+correct = (
+    "TCP is described as reliable",
+    "TCP is connection oriented",
+    "TCP requires a formal connection setup and close",
+    "TCP can manage messages out of sequence",
+    "TCP can manage retransmissions",
+    "TCP allows the reciever to manage how much data is sent",
+    "TCP enables recovery from eroneous transmissions",
+    "TCP is suited to sending files",
+)
+incorrect = (
+    "TCP is described as unreliable",
+    "TCP is connectionless",
+    "TCP does not require a formal connection setup and close",
+    "TCP does not manage messages out of sequence",
+    "TCP does not manage retransmissions",
+    "TCP allows the sender to manage how much data is sent",
+    "TCP is suited to steaming",
+)
+
+
+UDP#
+correct = (
+    "UDP is described as unreliable",
+    "UDP is connectionless",
+    "UDP does not require a formal open or close to the connection",
+    "UDP does not allow error recovery",
+    "UDP does not allow reordering of data",
+    "UDP does not manage retransmissions",
+    "UDP enables the sender to determine the amount of data transmitted",
+    "UDP is suited to streaming data",
+    "UDP is suited for online gaming",
+    "UDP is suited to watching content live", 
+     
+)
+incorrect = (
+    "UDP is described as reliable",
+    "UDP is connection oriented",
+    "UDP requires a formal open or close to the connection",
+    "UDP allows error recovery",
+    "UDP allowS reordering of data",
+    "UDP manages retransmissions",
+    "UDP enables the reciever to determine the amount of data transmitted",
+    "UDP is suited to transmitting files",
+)
+
+
+UDP vs TCP
+correct = (
+    "UDP is faster at transmitting data than TCP",
+    "TCP is slower at transmitting data than UDP",
+    "TCP provides better data integrity than UDP", 
+    "UDP us better for online gaming applications", 
+    "UDP is better for livestreaming applications", 
+    "TCP is better for sending files", 
+    "TCP and UDP are suited to different purposes", 
+    "UDP is faster than TCP",
+
+)
+
+incorrect = (
+    "UDP is slower at transmitting data than TCP",
+    "TCP is faster at transmitting data than UDP",
+    "UDP provides better data integrity than TCP", 
+    "TCP us better for online gaming applications", 
+    "TCP is better for livestreaming applications", 
+    "UDP is better for sending files", 
+    "TCP is better than UDP because it is more reliable",
+    "UDP is better than TCP because it is more reliable", 
+)
+
+IPv4 Sockets
+correct = (
+    "a server socket consists of a server IP address, protocol and a server application port number", 
+    "a client socket consists of a client IP address, protocol and a client application port number", 
+    "a socket includes an IP address, protocol and a port number",
+    "a socket includes, among other things, an IP address",
+    "a socket includes, among other things, protocol",
+    "a socket includes, among other things, a port number",
+)
+incorrect = (
+    "a client socket consists of a server IP address, protocol and a server application port number", 
+    "a server socket consists of a client IP address, protocol and a client application port number", 
+    "a socket includes an IP address, protocol and HTTP",
+    "a socket includes an IP address, SSL and a port number",
+    "a socket includes an IDSN address, protocol and a port number",
+    "a socket includes, among other things a VIN number,",
+    "a socket includes, among other things, ethernet connectors",
+    "a socket includes, among other things, an RJ45 connector",
+    "a socket includes, among other things, an antivirus check",    
+
+)
+
+Non ephemeral, ephemeral, UDP and TCP ports = 
+    correct = (
+        "non-ephemeral ports are fixed",
+        "non-ephemeral ports are usually linked to a server or service",
+        "ephemeral ports are temporary",
+        "ephemeral ports are assigned in real time by a client",
+        #generate numbers for these
+        0-`1023 are non-ephemeral
+        1024-65535 are ephemeral
+        "TCP can use TCP 0-65535"
+        "UDP can use UDP 0-65535"
+        "TCP could use TCP rand0-65535"
+        "UDP could use UDP rand0-65535"
+        "TCP could not use TCPrand 65535-100000"
+        "UDP could not use UDPrand 65535-100000"
+        "TCP and UDP use seperate ports"
+    )
+    incorrect = (
+        "ephemeral ports are fixed",
+        "ephemeral ports are usually linked to a server or service",
+        "non-ephemeral ports are temporary",
+        "non-ephemeral ports are assigned in real time by a client",
+        #generate numbers for these
+        0-`1023 are ephemeral
+        1024-65535 are non-ephemeral
+        "only TCP can use TCP 0-65535"
+        "only UDP can use UDP 0-65535"
+        "TCP could not use TCP rand0-65535"
+        "UDP could not use UDP rand0-65535"
+        "TCP could use TCP rand 65536-100000"
+        "UDP could use UDP rand 65536-100000"
+        "UDP and TCP share ports",
+        )
+
+
+ports_protocols = #('tcp/udp', 'port', 'Full name', 'XXX', 'description'),
+(
+    ('tcp', '17', "Quote of the day protocol", "QTDP", "Rturn a string of text and close the connection" )
+    ("tcp", "20", "File Transfer Protocol (active mode data)", "FTP (data)","Transfer file data between systems"),
+    ("tcp", "21", "File Transfer Protocol (control)", "FTP (control)", "Control transfer of file data between systems"),
+    ("tcp", "22", "Secure Shell", "SSH", "Use an encrypted communication link"),
+    ("tcp", "23", "Telecommunication Network", "Telnet", ""Login to devices remotely and In-the-clear communication"),
+    ("tcp", "53", "Domain name system", "DNS", "Convert names to IP addresses"),
+    ("udp", "67", "Dynmanic host configuration protocol", "DHCP (server)", "Automate configuration of IP address, subnet mask and other options"),
+    ("udp", "68",  "Dynmanic host configuration protocol", "DHCP (client)", "Automate configuration of IP address, subnet mask and other options"),
+    ("tcp", "80", "Hypertext transfer protocol", "HTTP","Web server communication"),
+    ("tcp", "110", "Post office Protocol 3", "POP3","Basic mail transfer functionality"),
+    ("udp", "119', 'Network News Transfer Protocol, 'NTP', 'Transfer usenet news articles')
+    ("udp", "123", "Network time protocol", "NTP", "Synchronise clocks and recieve timestamps"),
+    ("tcp", "143", "Internet message access protocol", "IMAP4","Email with invox management from multiple clients"),
+    ('udp', '161', 'Simple network management protocol',"SNMP", "Gather statistics from network devices"),
+    ("tcp", "389", "Lightweight Directory Access Protocol","LDAP", "store and retrieve information in a network directory"),    
+    ("udp", "427", "Service location protocol", "SLP", "Dertermine location of a device"),
+    ("tcp", "443", "Hypertext transfer protocol secure", "HTTPS","Web server communication with encryption"),
+    ("tcp", "445", "NetBIOS-less SMB commication", "CIFS","File and printer sharing"),
+    ("tcp", "3389", "Remote desktop protocol", "RDP", "Share an application or entire desktop from a remote location"), 
+    
+    ("udp", "161", "Gather queries statistics from network devices"),
+    ("udp", "162", "Gather traps statistics from network devices"),
+    ("udp", "137", "NetBIOS name service (nbname)", "nbname",""),
+    ("udp", "138", "NetBIOS datagram service (nbdatagram)", "nbdatagram",""),
+    ("udp", "139", "NetBIOS session services (nbsession)", "nbsessnio",""),
+    ("tcp", "548", "Apple Filing Protocol file services"),
+    ("tcp", "389", "lightweight directory access protocol", "LDAP"),
+)
+
+which of the following protocols would you use to
+which of the following descriptions is associated with PROTOCOL
+
+which port would you expect to use for NAME OF PROTOCOL
+NAME OF PROTOCOL IS usually associated with which port
+
+Engineer is trying to ACTIVITY. Which port should they make sure is open in the firewall?
+
+Which of the following are valid source and destination ports to NAMED ACTIVITY:
+
+which f the following are valid source and destination ports when using PROTOCOL
+
+which of these are valid source and destination ports to be used between a client and server:
+
+correct = 
+source > 1023
+correct protocol udp tcp
+correct protocol port
+
+HTTP data from TCP source port 3000 to TCP destination port 80
+VoiP data from UDP source port 7100 to UDP destination port 5004
+Email data from TCP source port 
+
+
+
+two different ways to move data:
+OSI layer 4 transport layer
+
+multiplexing use many different application at the same time
+
+tcp
+connection oriented
+
+reliable delivery recovery from errors
+can manage ouit of oder messages or retransmissions
+flow control the reciever can manage how much data is sent
+tcp data tcp ack
+
+
+
+
+OSI layers
+7 application
+high level apis, including resource sharing and remote file access
+6 presentation
+translation of data between a networking service and an application, including character encoding, data compression and encryp[tion\decryption]
+5 session
+managing continuous exhange of informaiton in the form of multiple back and forth transmissions between two nodes
+4 transport
+-segment or datagram
+reliable transmission of data segments between points, inculding segmentation, acknowledgement and multiplexing
+3 network 
+-packet
+- addressing, routing and traffic control of packets in a multi node network
+2 data link layer 
+-frame
+- reliable transmission of data frames between two nides connected by a physical layer
+1 physical 
+-bit or symbol
+- raw bit streams over physical medium
+
+
+multiplexing use many different applications at the same time tcp, udp

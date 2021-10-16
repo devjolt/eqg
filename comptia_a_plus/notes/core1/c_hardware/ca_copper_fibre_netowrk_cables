@@ -1,0 +1,93 @@
+def balanced pair
+start
+involves two wires
+wires have equal and opposite signals
+one wire carries a positive signal, the other a negative signal
+can be used to transmit or recieve
+wires are twisted
+mutiple twisted pairs can be used in the same cable
+pairs in the same cable have different twist rates
+twisted pairs mean that at least one wire is constantly moving away from interference
+stop
+
+def cabling standards
+items = (
+    ('EIA', 'Electronic industries alliance'),
+    ('TIA', 'Telecommunications Industry Association'),
+    ('ISO', 'International Standards Organization'),
+    ('IEC', 'International Electrotechnical Commission'),
+)
+
+def ISO IEC 11801 cabling standards
+start
+('Cat3', '10BASE-T', '100 m'),
+('Cat5', '100BASE-TX', '1000BASE-T, 100m
+('Cat5e', '100BASE-TX', '1000BASE-T, 100m enhance
+('Cat6', '10GBASE-T', '37-55m
+('Cat6a', '10GBASE-T', '100m augmented
+
+
+No plenum - seperate air supply and air return
+active or circulating plenum - shared with cabling and things
+make sure netowrk cabling is suitable
+
+Polyvinyl chloride is traditional cable jacket
+fluroinated ethelene polymer FEP or low smoke polyvinyl chloride (PVC) is fire rated cable jacket
+
+plenum rated cable may not be as flexible - lower bend radius. 
+
+Plan for worst case scenario
+
+
+Unshielded vs shielded
+UTP - most common, unshielded
+STP - Additional shielding against interference, shield each pair and/or overall cable, requires cable to be grounded. 
+
+u unshielded
+S = braided shielding
+f = foild shieldiong
+
+overall cable / individual pairs
+Braided entire + foil pairs  = S/FTP
+foil entire and  no shielding for pairs = f/UTP
+
+
+T568A and B
+EIA/TIA 568 B standards
+8 conductor 100 ohm balansted twisted pair cabling
+
+T568A and B are different pin assignments for 8p8C connectors
+
+T568A is horisontal
+most just use B
+both sides must be terminated with the same standards
+
+A - 
+White and green
+green
+white and orange
+blue
+white and blue
+orange
+white brown
+brown
+
+B-
+white and orange
+orange
+White and green
+blue
+white and blue
+green
+white brown
+brown
+
+4,5 7,8 are the same in each
+1,2,3,6 different
+RJ45
+
+coaxial cables
+
+jacket, metal shielding, dielctric insulator, wire conductor, 
+RG-6 for television/ digital cable, high speed internet over cable
+RG-59 for patch cables, not for long distances

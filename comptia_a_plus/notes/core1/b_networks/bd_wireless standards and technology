@@ -1,0 +1,135 @@
+table = (
+    ('','IEEE','')
+    'multiple input multiple output','MIMO'
+    'multi-use MIMO', 'MU-MIMO'
+    'radio frequency identification', 'RFID'
+)
+
+items = (
+    #standard, date introduced, frequency, speed, true 
+    ('a','October 1999', '5Ghz', '54 Mbit/s','not commonly seen today',  'shorter range than b or g'),
+    ('b', 'October 1999', '2.4Ghz', '11 Mbit/s', 'conflict with other devices'),
+    ('g', 'June 2003', '2.4Ghz', '54 Mbit/s', 'backwards compatible with a','conflict with other devices'),
+    ('n', 'October 2009', '5 and/or 2.4Ghz', '600 Mbit/s', '40MHz mode', '4 antennas', 'MIMO', 'multiple transmit and recieve antennas'),
+    ('ac', 'January 2014', '5Ghz', 'nearly 7 Gbit/s', 'more frequencies available', 'larger bandwidth usage', 'increased channel bonding', 'denser signalling modulation', '8 MU-MIMO streams'),
+)
+
+which standard had...
+date and other
+speed and other
+any three
+
+def wireless frequencies
+start
+2.4GHz is a commonly used frequency
+5Ghz is a commonly used frequency
+some devices use both 2.4GHz and 5Ghz
+5Ghz signals have a shorter range
+2.4GHz signals have a longer range
+802.11a devices can operate on 5Ghz
+802.11ac devices can operate on 5Ghz
+802.11n devices can operate on 5Ghz
+802.11b devices can operate on 2.4Ghz
+802.11g devices can operate on 2.4Ghz
+802.11n devices can operate on 2.4Ghz
+802.11n devices can operate on both 2.4Ghz and 5Ghz
+there are three 20MHz channels available in the 2.4Ghz range
+stop
+
+def wireless channels and bandwidth
+start
+chanels are defined by the IEEE
+802.11a has a bandwidth of 20MHz
+802.11b has a bandwidth of 22MHz
+802.11g has a bandwidth of 22MHz
+802.11n has a bandwidth of 20 or 40MHz
+802.11ac has a bandwidth of 80Mhz for 802.11ac stations
+802.11ac has a bandwidth of 40Mhz for 802.11n stations
+stop
+
+def bluetooth
+start
+high speed communication
+operates over short distances
+forms a personal area network
+connects mobile devices
+stop
+
+def radio frequency identification
+start
+used for access badges
+used for assembly line tracking
+used for pet identification
+
+RFID is powered by radio energy
+RFID uses radio wave energy to tranmit an ID
+bidirectional communication
+some tag formats are actively powered
+many tag formats are passively powered
+stop
+
+def near field communication
+two way wireless communication
+RFID is mostly one way communication
+used in payment systems
+used in online wallets
+NFC can help with Bluetooth pairing
+used in access tokens
+
+def Zigbee
+start
+IEEE 802.13.4 standard
+longer distance than bluetooth
+less power consumption than WiFi 
+a mesh network of Zigbee devices can be created
+alternative to Bluetooth
+alternative to WiFi 
+uses ISM band
+900MHz and 2.4GHz frequencies 
+industrial, scientific and medical applications
+stop
+
+def Zwave
+start
+wireless mesh networking
+nodes can hop using other nodes
+uses ISM band
+900MHz frequencies
+No conflicts with 802.11
+useful for IoT applications
+stop
+
+cellular network acronyms
+GSM global system for Mobile communications
+CDMA code division multiple access
+LTE long term evolution
+LTE-A long term evolution advanced
+EDGE enhanced data rates for GSM evolution
+
+def cellular networks
+start
+cell phones are a type of mobile device
+cellular networks assume that geographical space is divided into cells
+each antenna covers a cell with certain frequencies
+GSM  stands for global system for Mobile communications
+CDMA  stands for code division multiple access
+stop
+
+def cellular generations
+start
+GSM is a 2G technology
+CDMA is a 2G tecnology
+2G networks originally used circuit switching
+2G networks can support some packet switching
+3G was introduced in 1998
+3G runs at several megabits per second
+3G allows GPS functionality
+3G supports mobile television
+3G supports video on demand
+3G supports video conferencing
+4G LTE offers 150Mbit/s dowload speeds
+4G LTE-A supports 300Mbit/s download speeds
+4G is based on GSM and EDGE
+stop
+
+

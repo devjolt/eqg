@@ -1,0 +1,124 @@
+
+
+function keys
+fn key to display dual display between lcd and external
+duplicate extend project
+
+LCD switch
+
+refrigerator door effect#
+internal magswitch or mechanical switch
+physical switch on older laptopset functionality in the BIOS or utility
+
+
+
+control wireless signal
+airplane olderphysica switch or function key
+
+all or nothing switch
+
+may include 802.11, Bluetooth and cellular
+
+symbol or status light
+
+function key for audio
+
+backlight
+
+more light, more power
+
+keyboard backlight, intensity, brightness, duration, disable
+
+enable and disable touchpad
+
+desktop vs laptop differences
+laptop keyboard may have less keys
+laptop keyboard may not have a number pad
+laptop keyboard is likely to have function keys
+laptop keyboards may have a different layout to a desktop keyboard
+
+
+
+
+
+
+screen orientation
+
+rotate screen
+hotkey
+or funciton key
+
+specialised or function buttons
+control audio and video from your keyboard
+play stop reqind fast forward
+
+listen for gps signals
+enable or disable airplane mode. May be associated with other wireless functions
+
+function keys:
+true:
+adjust screen brightness
+toggle key backlight on or off
+toggle wifi on or off
+lock screen
+can provide convenient media keys (e.g. pause, fast forward etc)
+Can adjust noise volume
+Can be used to switch between project, dual screens and laptop screen modes
+Can turn a laptop's touchpad on or off
+adjust screen orientation
+
+false:
+adjust screen size
+prevent your laptop from becoming stolen
+function keys must all be programmed
+a laptop's keyboard backlight can be adjusted through the BIOS
+Touchpads can often only be turned off in the BIOS
+
+
+Problem, solution:
+need a device to use to give presentations where an external projector or screen is not present, rotating screen
+need a device to use as a laptop, whilst also being able to draw freehand, laptop with removable screen
+need to leave a laptop in a location whilst preventing theft, laptop lock
+cheapest option to use a printer, another screen, a mouse and a full keybaord at work desk without having to mess with wires
+combine power supply, connections to peripherals, extra slots for memory cards, keyboard and mouse with their laptop at their desk
+need to change quickly between projecting to a second screen and the laptop's screen, hotkeys
+Quickly mute the laptop, mute hotkey
+Quickly start, stop and cycle through media, media hotkeys
+need to save power whilst away from a socket, turn off keyboard backlighting and turn down screen backlight
+keep laptop screen projection running whilst device is closed, adjust settings in the BIOS or utility
+
+
+rotating /removable screens
+twist turn
+combine a laptop ketboard with a tablet screen 
+presentation
+stylus
+may be able to disconnect screen completely
+
+
+
+physical laptop locks
+connect to metal reinforced slots on the laptop
+Must also be connected to a solid object
+Cannot prevent the laptop from being opened
+Can prevent your laptop from being taken from a location
+
+
+True/false docking station and desktop
+true:
+docking stations provide a power supply
+port replicators do not provide a power supply
+docking stations extend laptop functionality
+port replicators allow you to connect peripherals through a usb or special port on your laptop
+desktop adapter cards in docking stations can give laptops desktop functionality
+port replicators allow use of peripherals without having to plug them into the laptop each time
+docking stations allow use of peripherals without having to plug them into the laptop each time
+extend existing laptop interfaces
+false:
+port replicators provide a power supply
+docking stations do not provide a power supply
+a usb keyboard extends laptop functionality
+docking stations allow you to connect peripherals through a usb or special port on your laptop
+desktop adapter cards in port replicators can give laptops desktop functionality
+port replicators allow desktop functionaliry on your laptop
+docking stations have to be plugged into a USB port

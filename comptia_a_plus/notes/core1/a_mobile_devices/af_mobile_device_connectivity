@@ -1,0 +1,256 @@
+
+
+What type of network does a phone use when broadcasting as use as a wireless hotspot?
+802.11
+127.0.0.1
+Port 8080
+192.601.xxx.xxx
+NFC
+WAN
+
+
+
+Mobile wireless functionality:
+correct = (
+    "you can connect to a mobile hotspot through its 802.11 network",
+    "you can connect to a mobile hotspot by tethering with a USB cable",
+    "you can connect to a mobile hotspot by tethering through bluetooth",
+    "connecting to a mobile hotspot may incur charges to the hotspot owner", 
+    "using a device as a hotspot will shorten battery life",
+)
+incorrect = (
+    "you can connect to a mobile hotspot through port 8000",
+    "you can connect to a mobile hotspot through it's address at 127.0.0.1",
+    "you can connect to a mobile hotspot by tethering it through NFC",
+    "you can connect to a mobile hotspot by tethering it through MAN",
+    "you can connect to a mobile hotspot by tethering it through IMEI",
+    "connecting to a mobile hotspot may incur charges to the owner of the connecting device",
+    "using a device as a hotspot does not affect battery life",
+)
+
+a user in your company will shortly be making a busniess flight, during which they will be required to turn off all of their wireless networks during takeoff. 
+after this, they want to be able to take advantage of the plane's free on board wifi. 
+
+which of the following might they need to do in this situation?
+correct:
+airplane mode
+iOS:swipe down to access the control center and turn on wifi
+android: go to settings, and wireless and network settings to turn on wifi
+
+incorrect:
+plug the phone into the plane's ethernet
+get the plane's bluetooth pin
+find out the plane's bluetooth ID
+iOS:swipe down to access the control center and turn on NFC
+android: go to settings, then wireless and network settings to enable PAN
+
+bluetooth pairing devices:
+correct:
+both devices must be bluetooth enabled
+both devices must have bluetooth switched on
+both devices must be on discoverable mode
+a pin must be entered on the device making the connection request
+all bluetooth deviced must be paired manually the first time they are paired
+bluetooth devices may pair automatically after the first pairing
+all discoverable devices in within range are listed
+
+incorrect:
+one of the devices must be bluetooth enabled
+pairing always happens automatically
+all devices with bluetooth on are discoverable
+one of the devices must have bluetooth switched on
+
+
+bluetooth requires pairing initially, but then disconnect and connect automatically
+1. Both devices must have their bluetooth switched on
+2. The device you wish to connect to must be discoverable
+3. Find the device you wish to connect with in the discoverable devices list
+4. Make a connection request
+5. Enter the pin on the device you are connecting with
+
+
+base band radio processors
+correct = (
+    "they have their own firmware",
+    "they have their own memory",
+    "firmware is updated over the air",
+    "updates are often invisible to end users",
+    "updates include preffered roaming lists",
+    "use prefered roaming lists to decide which towers to communicate with",
+    "may be updated with network codes and country codes",
+)
+incorrect = (
+    "they have their own firmware",
+    "they use phone's memory",
+    "firmware is updated only when user conents",
+    "end users schedule updates",
+    "are hardcoded with country and area codes",
+)
+
+
+IMEI and imsi
+correct = (
+    "all cellular network enabled devices have a unique IMEI number",
+    "IMEI stands for International Mobile Equipment Identity",
+    "the IMEI allows services to be allowed on a device",
+    "the IMEI allows services to be disallowed on a device",
+    "IMSI stands for International mobile subscriber identity",
+    "the ISMI identified each unique network user",
+    "the ISMI can be linked to a sim card",
+    "the ISMI can move between phones",
+
+)
+incorrect = (
+    "stands for Integrated Mobile Encrypted Infrastructure",
+    "all cellular enabled devices on a particular network have a unique IMEI Network number",
+    "the ISMI allows services to be allowed on a device",
+    "the ISMI allows services to be disallowed on a device",
+    "IMSI stands for International Mobile Service Identity",
+    "the IMEI identified each unique network user",
+    "the IMEI can be linked to a sim card",
+    "the IMEI can move between phones",
+)
+
+
+VPN
+correct = (
+    "mobile devices can be turned into a VPN endpoint for secure communication",
+    "a VPN allows secure communication between you and another device",
+    "VPN software may be integrated into a phone",
+    "VPN software may be downloaded into a phone",
+    "VPN software may require additional configuration to function",
+    "VPN software may require server information", 
+    "VPN software may require an RSA secure ID to be generated",
+    "a VPN admin may send a single file to update you with the VPN details",
+)
+incorrect = (
+    "mobile devices can be turned into a VPN endpoint for faster communication",
+    "a VPN allows faster communication between you and another device",
+    "VPN software is always pre-configured",
+    "VPN software may require mobile network information", 
+    "VPN software may require an ISMI number to be generated",
+    "VPN software may require an IMEI number to be generated",
+    "a VPN admin may need access to your device to configure it correctly",
+)
+
+#########
+configuring email. 
+############
+
+terms:
+items = (
+    ("pop", "post office protocol"),
+    ("imap", "internet message access protocol"),
+    ("tcp", "transmission control protocol"),
+    ("smtp","simple message transfer protocol"),
+    ("SSL", "secure socket layer")
+    ("S/MIME", "secure multipurpose internet main extensions")
+
+)
+fillers = ('posting office protocol','post order protocol', 'internet message authentication protocol', 'international message access protocol', 'transmission computer protocol', 'transmitted control protocol', 'signed message transfer protocol','secure server layer','socket security layer')
+
+which tcp ports are used for:
+items = (
+    ("pop3","110"),
+    ("SSL popS3","995"),
+    ("IMAP","143"),
+    ("SSL IMAPS","993"),
+    ("smtp no authentication","25"),
+    ("smtp with authentication","587"),
+)
+filter = ("8000", "8080", "401","10", "111","992" "996", "404", "341", "994","26","52","586","785")
+
+retrieving mail
+correct = (
+    "POP3 uses TCP/110",
+    "SSL POP3 uses TCP/995",
+    "older systems use POP3",
+    "newer systems use IMAP4",
+    "IMAP4 allows access to mail stored on a central server",
+    "IMAP allows creation of folders",
+    "IMAP allows server side searching",
+    "POP3 allows downloading mail to a local client",
+    "In POP3 services, network ports are defined by the email provider",
+    "To use IMAP services, your system must know the name of the provider's server",
+    "POP3 can optionally delete downloaded emails from the server",
+
+)
+incorrect = (
+    "POP3 uses RTP/110",
+    "POP3 uses HTTP/110",
+    "SSL POP3 uses RTP/995",
+    "SSL POP3 uses CPU/995",
+    "older systems use IMAP4",
+    "newer systems use POP3",
+    "IMAP4 allows access to mail stored on your local server",
+    "POP3 allows creation of folders",
+    "POP3 allows server side searching",
+    "SMTP allows downloading mail to a local client",
+    "In POP3 services, network ports are defined locally",
+    "To use IMAP services, you must have HTTP enabled",
+    "POP3 alwaya deletes downloaded emails from the server", 
+)
+
+sending email
+correct = (
+    "sending emails is done using SMPT",
+    "SMPT allows mail to be sent from a device to a mail server",    
+    "SMTP requires mail to be sent from a local device",
+    "SMTP requires mail to be sent from a trusted device",
+    "SMTP usually requires authentication to send messages",
+    "SMTP with no authentication uses TCP/25",
+    "SMTP with authentication uses TCP/587",
+    "using unauthenticated SMTP is less common",
+    "using authenticated SMTP is more common",
+)
+incorrect = (
+    "sending emails is done using POP3",
+    "sending emails is done using IMAP4",
+    "sending emails is done using SPMT",
+    "POP3 allows mail to be sent from a device to a mail server",    
+    "IMAP4 allows mail to be sent from a device to a mail server",    
+    "SMTP requires mail to be sent from a mobile device",
+    "SMTP requires mail to be sent from an active device",
+    "SMTP usually requires authentication to retrieve",
+    "SMTP with authentication uses TCP/25",
+    "SMTP with no authentication uses TCP/587",
+    "using unauthenticated SMTP is more common",
+    "using authenticated SMTP is less common",
+)
+
+configuring older systems to send and recieve email with POP3 and SMTP:
+correct = (
+    "provide network ports defined and provided by email provider",
+    "TCP port 995 is used with SSL",
+    "TCP port 110 is requires where SSL is not used",
+    "An email address and password is required to download emails using POP3", 
+    "An email address and password is required to send emails using SMTP", 
+    "TCP port 25 is used to send emails without authentication but is rarely used",
+    "TCP port 587 is commonly used to send emails with SMTP and requires authentication",
+)
+
+configuring modern systems to send and recieve email with POP3 and SMTP:
+correct = (
+    "provide network ports defined and provided by email provider",
+    "TCP port 993 is used with SSL to download emails",
+    "TCP port 143 is requires where SSL is not used to download emails",
+    "An email address and password is required to download emails using IMAP4", 
+    "An email address and password is required to send emails using SMTP", 
+    "TCP port 25 is used to send emails without authentication but is rarely used",
+    "TCP port 587 is commonly used to send emails with SMTP and requires authentication",
+    "Folders may be created to store emails",
+    "Emails stored on the server are searchable", 
+)
+
+configuring and using enterprice email
+correct = (
+    "email service commonly integrated with contacts, calendars and reminders",
+    "information can be synchronised between devices", 
+    "providers supply an email address", 
+    "access to email is often through a provider's domain",
+    "may use S/MIME to encrypt and sign messages",
+    "gmail splits the inbox into tabs",
+    "gmail uses imap4 and pop3",
+    "Yahoo mail uses imap4 and pop3",
+    "icloud email uses apple's main server and imap4",
+)

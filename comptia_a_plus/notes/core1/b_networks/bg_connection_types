@@ -1,0 +1,66 @@
+def cable modem
+start
+broadband communication
+transmission across multiple frequencies
+different traffic types
+can carry video and voice simultaneously
+can carry video and data simultaneously
+can carry data and voice simultaneously
+can carry video, data and voice simultaneously
+DOCSIS 
+Data over cable service interface specification
+high speeds
+4-250Mbit/s speeds common
+stop
+
+def DSL modem
+startasd```````
+DSL stands for digital subscriber line
+uses existing telephone lines
+download speed is faster an upload speed
+10,000 ft distance limit from central office
+closer to the central office means faster speeds
+ADSL and DSL are the same thing
+stop
+
+def dialup
+start
+use voice telephone lines
+analog lines
+limited frequency response 
+56 kbit/s modems
+difficult to scale
+difficult to find a modem 
+old technology
+compression up to 320 kbit/s
+stop
+
+def fiber
+start
+converged services
+voice, video and data
+enhanced features include hundreds of HD channels
+enhanced features include 1 Gbit/s speeds
+enhanced features include cloud storage
+enhanced features include DVR
+stop
+
+def satalite networking
+start
+communication to a satalite
+non terrestrial communication
+high cost 
+50 Mbit/s download speed 
+3 Mbit/s upload speed 
+useful for remote sites 
+high latency
+250 ms upload and 250 download latency
+line of sight required
+rain fade may be an issue
+stop
+
+def integrated services digital network 
+start
+ISDN stands for integrated service digital network
+
+stop
