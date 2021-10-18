@@ -7,14 +7,7 @@ For more information on this file, see
 https://docs.djangoproject.com/en/3.2/howto/deployment/wsgi/
 https://docs.bitnami.com/aws/infrastructure/django/get-started/deploy-django-project/
 """
-#approach A
-import os
-from django.core.wsgi import get_wsgi_application
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'eqg.settings')
-application = get_wsgi_application()
 
-
-"""
 #APPROACH B
 import os
 import sys
@@ -23,4 +16,3 @@ os.environ.setdefault("PYTHON_EGG_CACHE", "/opt/bitnami/projects/eqg/egg_cache")
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "eqg.settings")
 from django.core.wsgi import get_wsgi_application
 application = get_wsgi_application()
-"""
