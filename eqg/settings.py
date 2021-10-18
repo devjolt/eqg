@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-xa=8u(i4ou+7(&zl*ey+m1&f$3b$7v#=_m-4z&2(cw#7+rr+3e
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['3.9.87.44', 'examquestiongenerator.com', 'examquestiongenerator.co.uk']
 
 
 # Application definition
